@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2024-03-19" view-index="0" gantt-divider-location="343" resource-divider-location="300" version="3.3.3305" locale="en_AU">
+    <description/>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd15" name="Notes" width="20" order="0"/>
+        <field id="tpd3" name="Name" width="135" order="0"/>
+        <field id="tpd4" name="Begin date" width="20" order="1"/>
+        <field id="tpd5" name="End date" width="30" order="2"/>
+        <field id="tpd6" name="Duration" width="20" order="3"/>
+        <field id="tpd10" name="ID" width="20" order="4"/>
+        <field id="tpd9" name="Predecessors" width="81" order="5"/>
+        <field id="tpd1" name="Priority" width="22" order="6"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <timeline><![CDATA[4,2]]></timeline>
+        <option id="color.recent"><![CDATA[#ffff00 #ff9999 #9999ff #ffffcc #99ffff #000099 #ccffcc #000000 #00cc00 #ff6666]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="0e93023abf7947789714ec312d8a9187" name="Project Management" color="#000000" meeting="true" project="true" start="2024-03-27" duration="0" complete="0" priority="2" expand="true">
+            <notes><![CDATA[starting docmenting and start project planner]]></notes>
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+            <depend id="17" type="2" difference="0" hardness="Strong"/>
+            <task id="1" uid="6db61d4cc12d475a921ad3f6b5e82be2" name="Begin Journal" color="#ccffcc" meeting="false" start="2024-03-27" duration="18" complete="0" expand="true">
+                <notes><![CDATA[Journel will be done along the whole time of the project]]></notes>
+                <depend id="3" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="2" uid="6b3bd86453d446399c6978a1aedf378a" name="Gantt Chart" color="#ccffcc" meeting="false" start="2024-03-27" duration="18" complete="0" priority="2" expand="true">
+                <notes><![CDATA[Make my gantt chart and finish it]]></notes>
+                <depend id="3" type="2" difference="0" hardness="Rubber"/>
+            </task>
+        </task>
+        <task id="3" uid="efee7128f7f44530b6f996c0beceed1f" name="Development Model SAT" meeting="false" start="2024-04-22" duration="3" complete="0" expand="true">
+            <notes><![CDATA[Select describe and justify a development model to be used for SAT. (Analysis)]]></notes>
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="4" uid="5dfe87d1b7f0468189f69cd89daaa840" name="End of  Formative Start" meeting="true" start="2024-04-25" duration="0" complete="0" priority="2" expand="true">
+            <notes><![CDATA[Represent data and relationships using analysis tools ]]></notes>
+            <task id="5" uid="d03058e592974c2a8d377a780d8c74bb" name="Gather Data and Document it" color="#00cc00" meeting="false" start="2024-04-25" duration="2" complete="0" expand="true">
+                <notes><![CDATA[Gather and document  primary and secondary data to determine Application requirements (input/output, functional / non-functional requirements, scope, constraints , operating environment, etc...'(Analysis)]]></notes>
+                <depend id="6" type="2" difference="0" hardness="Strong"/>
+                <depend id="7" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="6" uid="dc879f30ce9746228ca85aaffb41ad9c" name="Create Data Diagrams" color="#00cc00" meeting="false" start="2024-04-29" duration="10" complete="0" expand="true">
+                <notes><![CDATA[(Create Use Case Diagram, Data Flow Diagram and  Context Diagram) (Analysis)]]></notes>
+                <depend id="7" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="7" uid="bc589d8250e5448b92a076fa505b2c38" name="Software Requirments Specifications Report" color="#000099" meeting="false" start="2024-05-13" duration="5" complete="0" expand="true">
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="8" uid="8496820dafc54d86bb59a84411fda8e4" name="End of Anaylsis" meeting="true" start="2024-05-20" duration="0" complete="0" expand="true">
+            <task id="9" uid="b7dd28e044814e23a7e42572098dba45" name="Think of Design ideas and the Design criteria" color="#99ffff" meeting="false" start="2024-05-20" duration="5" complete="0" expand="true">
+                <notes><![CDATA[Establish evaluation criteria for designs and Application (Design)	
+Generate at least 2 Design Ideas (Design)	
+]]></notes>
+                <depend id="10" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="10" uid="eabad636fba845fb81e2401137b7026f" name="Pick design and make more detail" color="#99ffff" meeting="false" start="2024-05-27" duration="5" complete="0" expand="true">
+                <notes><![CDATA[Select and justify preferred design based on criteria	
+Create detailed design for selected design – Mockups, Data dictionary, pseudocode   (Design)	
+]]></notes>
+                <depend id="11" type="2" difference="0" hardness="Strong"/>
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="11" uid="e932175020854ab795d4d49a032de616" name="End of design" meeting="true" start="2024-06-03" duration="0" complete="0" expand="true">
+            <depend id="15" type="2" difference="0" hardness="Strong"/>
+            <task id="12" uid="7e841b6c6fbb4ed18fd9543cbbbfd2a1" name="Develop Application" color="#ffffcc" meeting="false" start="2024-06-03" duration="50" complete="0" expand="true">
+                <notes><![CDATA[Develop Application (Development) (functional requirements)	9/8/2024
+Add internal documentation   (Development)
+Add validation features to application (Development)
+Add security features to application (Development)
+Testing (functionality) (Development)	
+
+]]></notes>
+                <depend id="13" type="2" difference="0" hardness="Strong"/>
+                <depend id="14" type="2" difference="0" hardness="Strong"/>
+                <depend id="15" type="2" difference="0" hardness="Strong"/>
+                <depend id="16" type="2" difference="0" hardness="Strong"/>
+                <depend id="17" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="13" uid="648543cd87234f31915f5c032cf94a0e" name="Conduct Usability Testing" color="#ff9999" meeting="false" start="2024-08-12" duration="5" complete="0" expand="true">
+            <notes><![CDATA[Usability Testing  (Development)	
+Design Usability test (Development)
+Conduct usability test (Development)
+Evaluate usability test results and determine recommended  modifications to app (Development)
+Make modifications to application  (Development)
+
+]]></notes>
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="14" uid="dac9835477d748b3934abbab84c2417d" name="End of Development" meeting="true" start="2024-08-19" duration="0" complete="0" expand="true">
+            <task id="15" uid="45d50b2d288a450cb1e26dd84e1a59b9" name="Evulaute the Efficiency and Effectiveness" color="#ffff00" meeting="false" start="2024-08-19" duration="10" complete="0" expand="true">
+                <notes><![CDATA[Propose strategies for evaluating the efficiency and effectiveness of solution  (Evaluation)	
+Evaluate solution in terms of efficiency and effectiveness in meeting all function/non-functional requirements (Evaluation)
+]]></notes>
+                <depend id="18" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="16" uid="76a0543e2d164bec92da96eaf62f5a6b" name="Evulaute Development Model" color="#ffff00" meeting="false" start="2024-08-19" duration="10" complete="0" expand="true">
+                <notes><![CDATA[Evaluate the development model selected (Evaluation)]]></notes>
+                <depend id="18" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="17" uid="14cb8243b89e4c798206c4f875194d1d" name="Evaluate Project Plan" color="#ffff00" meeting="false" start="2024-08-19" duration="10" complete="0" expand="true">
+                <notes><![CDATA[Evaluate the  project plan (how was it useful in managing the completion of the SAT?) (Evaluation)	]]></notes>
+                <depend id="18" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="18" uid="62df16aec7fe452ab0e96b594f7e46b2" name="End of Evaluation" meeting="true" start="2024-09-02" duration="0" complete="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
