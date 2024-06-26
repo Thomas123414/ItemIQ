@@ -1,0 +1,11 @@
+C:\Users\AND0043\Documents\GitHub\ItemIQ\SAT Software\ItemIQ\bin\Debug\ItemIQ.exe.config
+C:\Users\AND0043\Documents\GitHub\ItemIQ\SAT Software\ItemIQ\bin\Debug\ItemIQ.exe
+C:\Users\AND0043\Documents\GitHub\ItemIQ\SAT Software\ItemIQ\bin\Debug\ItemIQ.pdb
+C:\Users\AND0043\Documents\GitHub\ItemIQ\SAT Software\ItemIQ\obj\Debug\ItemIQ.csproj.AssemblyReference.cache
+C:\Users\AND0043\Documents\GitHub\ItemIQ\SAT Software\ItemIQ\obj\Debug\ItemIQ.Form1.resources
+C:\Users\AND0043\Documents\GitHub\ItemIQ\SAT Software\ItemIQ\obj\Debug\ItemIQ.Properties.Resources.resources
+C:\Users\AND0043\Documents\GitHub\ItemIQ\SAT Software\ItemIQ\obj\Debug\ItemIQ.SignUp.resources
+C:\Users\AND0043\Documents\GitHub\ItemIQ\SAT Software\ItemIQ\obj\Debug\ItemIQ.csproj.GenerateResource.cache
+C:\Users\AND0043\Documents\GitHub\ItemIQ\SAT Software\ItemIQ\obj\Debug\ItemIQ.csproj.CoreCompileInputs.cache
+C:\Users\AND0043\Documents\GitHub\ItemIQ\SAT Software\ItemIQ\obj\Debug\ItemIQ.exe
+C:\Users\AND0043\Documents\GitHub\ItemIQ\SAT Software\ItemIQ\obj\Debug\ItemIQ.pdb
