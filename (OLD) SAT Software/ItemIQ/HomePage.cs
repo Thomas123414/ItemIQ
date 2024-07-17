@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ItemIQ
 {
-    public partial class SignUp : Form
+    public partial class HomePage : Form
     {
-        public SignUp()
+        public HomePage()
         {
             InitializeComponent();
+        }
+
+        private void HomePage_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

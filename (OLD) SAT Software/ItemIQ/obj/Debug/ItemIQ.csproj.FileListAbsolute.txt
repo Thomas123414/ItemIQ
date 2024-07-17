@@ -9,3 +9,4 @@ C:\Users\AND0043\Documents\GitHub\ItemIQ\SAT Software\ItemIQ\obj\Debug\ItemIQ.cs
 C:\Users\AND0043\Documents\GitHub\ItemIQ\SAT Software\ItemIQ\obj\Debug\ItemIQ.csproj.CoreCompileInputs.cache
 C:\Users\AND0043\Documents\GitHub\ItemIQ\SAT Software\ItemIQ\obj\Debug\ItemIQ.exe
 C:\Users\AND0043\Documents\GitHub\ItemIQ\SAT Software\ItemIQ\obj\Debug\ItemIQ.pdb
+C:\Users\AND0043\Documents\GitHub\ItemIQ\SAT Software\ItemIQ\obj\Debug\ItemIQ.HomePage.resources

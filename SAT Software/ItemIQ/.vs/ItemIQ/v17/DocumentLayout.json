@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{63E2D71F-11D1-4C91-AAA6-A057FBB312C6}|ItemIQ.csproj|c:\\users\\and0043\\documents\\github\\itemiq\\sat software\\itemiq\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{63E2D71F-11D1-4C91-AAA6-A057FBB312C6}|ItemIQ.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63E2D71F-11D1-4C91-AAA6-A057FBB312C6}|ItemIQ.csproj|c:\\users\\and0043\\documents\\github\\itemiq\\sat software\\itemiq\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63E2D71F-11D1-4C91-AAA6-A057FBB312C6}|ItemIQ.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63E2D71F-11D1-4C91-AAA6-A057FBB312C6}|ItemIQ.csproj|c:\\users\\and0043\\documents\\github\\itemiq\\sat software\\itemiq\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{63E2D71F-11D1-4C91-AAA6-A057FBB312C6}|ItemIQ.csproj|solutionrelative:homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|c:\\users\\and0043\\documents\\github\\itemiq\\sat software\\itemiq\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,33 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomePage.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\HomePage.cs",
-              "RelativeDocumentMoniker": "HomePage.cs",
-              "ToolTip": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\HomePage.cs [Design]",
-              "RelativeToolTip": "HomePage.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T02:15:42.991Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T02:10:45.398Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -58,7 +25,7 @@
               "ToolTip": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T01:54:52.507Z",
+              "WhenOpened": "2024-07-17T02:43:54.026Z",
               "EditorCaption": " [Design]"
             }
           ]
