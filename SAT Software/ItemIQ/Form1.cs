@@ -1,3 +1,5 @@
+using System.Xml;
+
 namespace ItemIQ
 {
     public partial class Form1 : Form
@@ -20,15 +22,61 @@ namespace ItemIQ
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            // Create a new instance of StaffMainScreen form
-            MainPage mainPage = new MainPage();
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
+            bool LoginDetails = false;
+            string filePath = "C:\\Users\\AND0043\\Desktop\\testingforcode\\LoginDetails.xml";
 
-            // Subscribe to the Closed event of form2 to close the current form when form2 is closed
-            mainPage.Closed += (s, args) => this.Close();
+            string currentUsernames = "", currentEmails = "", currentPasswords = "";
+            using (XmlReader reader = XmlReader.Create(filePath))
+            {
 
-            // Display form2
-            mainPage.Show();
+                while (reader.Read())
+                {
+                    // ListViewItem listItem = new ListViewItem();   //"Row" object.
+                    if (reader.IsStartElement())
+                    {
+
+                        //return only when you have START tag  
+                        switch (reader.Name.ToString())
+                        {
+                            case "User":       //Store the data element firstname 
+                                currentUsernames = reader.ReadString();
+                                break;
+                            case "Email":
+                                currentEmails = reader.ReadString();
+                                break;
+                            case "Password":
+                                currentPasswords = reader.ReadString();
+                                break;
+                        }
+                        if (username == currentUsernames || password == currentPasswords)
+                        {
+                            LoginDetails = true;
+                        }
+
+                    }
+
+                }
+
+            }
+
+            if (LoginDetails == true)
+            {
+                this.Hide();
+                // Create a new instance of StaffMainScreen form
+                MainPage mainPage = new MainPage();
+
+                // Subscribe to the Closed event of form2 to close the current form when form2 is closed
+                mainPage.Closed += (s, args) => this.Close();
+
+                // Display form2
+                mainPage.Show();
+            }
+            else
+            {
+                MessageBox.Show("Login Details are not correct! Please try again");
+            }
         }
 
         private void btnSignUp_Click(object sender, EventArgs e)

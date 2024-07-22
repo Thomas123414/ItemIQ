@@ -126,7 +126,7 @@
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Login";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
