@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ItemIQ")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b328dc0b5ff093b1ddf3fb3cc15b213f28054c3b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d5bb6dc642bcf04b5af4be7ce323d202147c919")]
 [assembly: System.Reflection.AssemblyProductAttribute("ItemIQ")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ItemIQ")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
