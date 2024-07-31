@@ -37,40 +37,42 @@
             btnChecklist = new Button();
             btnProfile = new Button();
             btnLogOut = new Button();
-            pictureBox10 = new PictureBox();
+            PicRecommend = new PictureBox();
             btnNextItem = new Button();
             btnAddtocart = new Button();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            lblRecommendItemText = new Label();
             flowLayoutPanel2 = new FlowLayoutPanel();
+            PicItem1 = new PictureBox();
+            lblItem1 = new Label();
+            btnItem1 = new Button();
             flowLayoutPanel3 = new FlowLayoutPanel();
+            PicItem2 = new PictureBox();
+            lblItem2 = new Label();
+            btnItem2 = new Button();
             flowLayoutPanel4 = new FlowLayoutPanel();
+            PicItem3 = new PictureBox();
+            lblItem3 = new Label();
+            btnItem3 = new Button();
             flowLayoutPanel5 = new FlowLayoutPanel();
             flowLayoutPanel6 = new FlowLayoutPanel();
             flowLayoutPanel7 = new FlowLayoutPanel();
-            PicCucumber = new PictureBox();
-            lblCucumber = new Label();
-            btnCucumber = new Button();
-            pictureBox1 = new PictureBox();
-            label3 = new Label();
-            button1 = new Button();
-            pictureBox2 = new PictureBox();
-            label4 = new Label();
-            button2 = new Button();
             flowLayoutPanel8 = new FlowLayoutPanel();
             flowLayoutPanel9 = new FlowLayoutPanel();
             flowLayoutPanel10 = new FlowLayoutPanel();
             flowLayoutPanel11 = new FlowLayoutPanel();
             flowLayoutPanel12 = new FlowLayoutPanel();
             flowLayoutPanel13 = new FlowLayoutPanel();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            lblRecommendItemText = new Label();
+            lblRecommendItem = new Label();
+            lblRecommendPrice = new Label();
+            ((System.ComponentModel.ISupportInitialize)PicRecommend).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)PicItem1).BeginInit();
             flowLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)PicItem2).BeginInit();
             flowLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)PicCucumber).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PicItem3).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -170,15 +172,15 @@
             btnLogOut.UseVisualStyleBackColor = false;
             btnLogOut.Click += btnLogOut_Click;
             // 
-            // pictureBox10
+            // PicRecommend
             // 
-            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(12, 129);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(415, 254);
-            pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox10.TabIndex = 9;
-            pictureBox10.TabStop = false;
+            PicRecommend.Image = (Image)resources.GetObject("PicRecommend.Image");
+            PicRecommend.Location = new Point(12, 129);
+            PicRecommend.Name = "PicRecommend";
+            PicRecommend.Size = new Size(415, 254);
+            PicRecommend.SizeMode = PictureBoxSizeMode.StretchImage;
+            PicRecommend.TabIndex = 9;
+            PicRecommend.TabStop = false;
             // 
             // btnNextItem
             // 
@@ -225,27 +227,14 @@
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(1012, 303);
             flowLayoutPanel1.TabIndex = 13;
-            flowLayoutPanel1.Paint += this.flowLayoutPanel1_Paint;
-            // 
-            // lblRecommendItemText
-            // 
-            lblRecommendItemText.AutoSize = true;
-            lblRecommendItemText.Font = new Font("Bernard MT Condensed", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblRecommendItemText.Location = new Point(433, 129);
-            lblRecommendItemText.MaximumSize = new Size(300, 251);
-            lblRecommendItemText.MinimumSize = new Size(300, 251);
-            lblRecommendItemText.Name = "lblRecommendItemText";
-            lblRecommendItemText.Size = new Size(300, 251);
-            lblRecommendItemText.TabIndex = 10;
-            lblRecommendItemText.Text = "The Lebanese cucumber is green skinned, white fleshed and only 15 cm long. It has a juicy texture and a tender skin that does not need to be peeled. Price: 1.78 / 1ea";
-            lblRecommendItemText.Click += lblRecommendItemText_Click;
+            flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
             // 
             // flowLayoutPanel2
             // 
             flowLayoutPanel2.Anchor = AnchorStyles.Top;
-            flowLayoutPanel2.Controls.Add(PicCucumber);
-            flowLayoutPanel2.Controls.Add(lblCucumber);
-            flowLayoutPanel2.Controls.Add(btnCucumber);
+            flowLayoutPanel2.Controls.Add(PicItem1);
+            flowLayoutPanel2.Controls.Add(lblItem1);
+            flowLayoutPanel2.Controls.Add(btnItem1);
             flowLayoutPanel2.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel2.Location = new Point(3, 3);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
@@ -253,11 +242,46 @@
             flowLayoutPanel2.TabIndex = 14;
             flowLayoutPanel2.Paint += flowLayoutPanel2_Paint;
             // 
+            // PicItem1
+            // 
+            PicItem1.Cursor = Cursors.Cross;
+            PicItem1.Image = (Image)resources.GetObject("PicItem1.Image");
+            PicItem1.Location = new Point(3, 3);
+            PicItem1.Name = "PicItem1";
+            PicItem1.Size = new Size(317, 192);
+            PicItem1.SizeMode = PictureBoxSizeMode.StretchImage;
+            PicItem1.TabIndex = 0;
+            PicItem1.TabStop = false;
+            PicItem1.Click += pictureBox1_Click_1;
+            // 
+            // lblItem1
+            // 
+            lblItem1.AutoSize = true;
+            lblItem1.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblItem1.Location = new Point(3, 198);
+            lblItem1.MaximumSize = new Size(315, 0);
+            lblItem1.Name = "lblItem1";
+            lblItem1.Size = new Size(308, 64);
+            lblItem1.TabIndex = 14;
+            lblItem1.Text = "The Lebanese cucumber is green skinned, white fleshed and only 15 cm long. It has a juicy texture and a tender skin that does not need to be peeled. Price: 1.78 / 1ea";
+            // 
+            // btnItem1
+            // 
+            btnItem1.BackColor = Color.DarkSlateBlue;
+            btnItem1.ForeColor = SystemColors.ActiveCaptionText;
+            btnItem1.Location = new Point(3, 265);
+            btnItem1.Name = "btnItem1";
+            btnItem1.Size = new Size(308, 27);
+            btnItem1.TabIndex = 0;
+            btnItem1.Text = "Add to cart";
+            btnItem1.UseVisualStyleBackColor = false;
+            btnItem1.Click += btnItem1_Click;
+            // 
             // flowLayoutPanel3
             // 
-            flowLayoutPanel3.Controls.Add(pictureBox1);
-            flowLayoutPanel3.Controls.Add(label3);
-            flowLayoutPanel3.Controls.Add(button1);
+            flowLayoutPanel3.Controls.Add(PicItem2);
+            flowLayoutPanel3.Controls.Add(lblItem2);
+            flowLayoutPanel3.Controls.Add(btnItem2);
             flowLayoutPanel3.Dock = DockStyle.Bottom;
             flowLayoutPanel3.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel3.Location = new Point(329, 3);
@@ -265,17 +289,85 @@
             flowLayoutPanel3.Size = new Size(320, 295);
             flowLayoutPanel3.TabIndex = 15;
             // 
+            // PicItem2
+            // 
+            PicItem2.Cursor = Cursors.Cross;
+            PicItem2.Image = (Image)resources.GetObject("PicItem2.Image");
+            PicItem2.Location = new Point(3, 3);
+            PicItem2.Name = "PicItem2";
+            PicItem2.Size = new Size(317, 158);
+            PicItem2.SizeMode = PictureBoxSizeMode.StretchImage;
+            PicItem2.TabIndex = 15;
+            PicItem2.TabStop = false;
+            // 
+            // lblItem2
+            // 
+            lblItem2.AutoSize = true;
+            lblItem2.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblItem2.Location = new Point(3, 164);
+            lblItem2.MaximumSize = new Size(315, 0);
+            lblItem2.Name = "lblItem2";
+            lblItem2.Size = new Size(314, 96);
+            lblItem2.TabIndex = 17;
+            lblItem2.Text = resources.GetString("lblItem2.Text");
+            // 
+            // btnItem2
+            // 
+            btnItem2.BackColor = Color.DarkSlateBlue;
+            btnItem2.ForeColor = SystemColors.ActiveCaptionText;
+            btnItem2.Location = new Point(3, 263);
+            btnItem2.Name = "btnItem2";
+            btnItem2.Size = new Size(314, 27);
+            btnItem2.TabIndex = 16;
+            btnItem2.Text = "Add to cart";
+            btnItem2.UseVisualStyleBackColor = false;
+            btnItem2.Click += btnItem2_Click;
+            // 
             // flowLayoutPanel4
             // 
-            flowLayoutPanel4.Controls.Add(pictureBox2);
-            flowLayoutPanel4.Controls.Add(label4);
-            flowLayoutPanel4.Controls.Add(button2);
+            flowLayoutPanel4.Controls.Add(PicItem3);
+            flowLayoutPanel4.Controls.Add(lblItem3);
+            flowLayoutPanel4.Controls.Add(btnItem3);
             flowLayoutPanel4.Dock = DockStyle.Bottom;
             flowLayoutPanel4.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel4.Location = new Point(655, 3);
             flowLayoutPanel4.Name = "flowLayoutPanel4";
             flowLayoutPanel4.Size = new Size(320, 295);
             flowLayoutPanel4.TabIndex = 15;
+            // 
+            // PicItem3
+            // 
+            PicItem3.Cursor = Cursors.Cross;
+            PicItem3.Image = (Image)resources.GetObject("PicItem3.Image");
+            PicItem3.Location = new Point(3, 3);
+            PicItem3.Name = "PicItem3";
+            PicItem3.Size = new Size(317, 206);
+            PicItem3.SizeMode = PictureBoxSizeMode.StretchImage;
+            PicItem3.TabIndex = 15;
+            PicItem3.TabStop = false;
+            // 
+            // lblItem3
+            // 
+            lblItem3.AutoSize = true;
+            lblItem3.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblItem3.Location = new Point(3, 212);
+            lblItem3.MaximumSize = new Size(315, 0);
+            lblItem3.Name = "lblItem3";
+            lblItem3.Size = new Size(312, 48);
+            lblItem3.TabIndex = 17;
+            lblItem3.Text = "Beautifully balanced, mild & mellow sweetness — add a Royal Gala to your salads, sauces & pies. $0.78 / 1EA";
+            // 
+            // btnItem3
+            // 
+            btnItem3.BackColor = Color.DarkSlateBlue;
+            btnItem3.ForeColor = SystemColors.ActiveCaptionText;
+            btnItem3.Location = new Point(3, 263);
+            btnItem3.Name = "btnItem3";
+            btnItem3.Size = new Size(308, 27);
+            btnItem3.TabIndex = 16;
+            btnItem3.Text = "Add to cart";
+            btnItem3.UseVisualStyleBackColor = false;
+            btnItem3.Click += btnItem3_Click;
             // 
             // flowLayoutPanel5
             // 
@@ -303,106 +395,6 @@
             flowLayoutPanel7.Name = "flowLayoutPanel7";
             flowLayoutPanel7.Size = new Size(320, 295);
             flowLayoutPanel7.TabIndex = 18;
-            // 
-            // PicCucumber
-            // 
-            PicCucumber.Cursor = Cursors.Cross;
-            PicCucumber.Image = (Image)resources.GetObject("PicCucumber.Image");
-            PicCucumber.Location = new Point(3, 3);
-            PicCucumber.Name = "PicCucumber";
-            PicCucumber.Size = new Size(317, 138);
-            PicCucumber.SizeMode = PictureBoxSizeMode.StretchImage;
-            PicCucumber.TabIndex = 0;
-            PicCucumber.TabStop = false;
-            PicCucumber.Click += pictureBox1_Click_1;
-            // 
-            // lblCucumber
-            // 
-            lblCucumber.AutoSize = true;
-            lblCucumber.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblCucumber.Location = new Point(3, 144);
-            lblCucumber.MaximumSize = new Size(315, 0);
-            lblCucumber.Name = "lblCucumber";
-            lblCucumber.Size = new Size(308, 64);
-            lblCucumber.TabIndex = 14;
-            lblCucumber.Text = "The Lebanese cucumber is green skinned, white fleshed and only 15 cm long. It has a juicy texture and a tender skin that does not need to be peeled. Price: 1.78 / 1ea";
-            // 
-            // btnCucumber
-            // 
-            btnCucumber.BackColor = Color.DarkSlateBlue;
-            btnCucumber.ForeColor = SystemColors.ActiveCaptionText;
-            btnCucumber.Location = new Point(3, 211);
-            btnCucumber.Name = "btnCucumber";
-            btnCucumber.Size = new Size(308, 27);
-            btnCucumber.TabIndex = 0;
-            btnCucumber.Text = "Add to cart";
-            btnCucumber.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Cursor = Cursors.Cross;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(3, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(317, 138);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 15;
-            pictureBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(3, 144);
-            label3.MaximumSize = new Size(315, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(308, 64);
-            label3.TabIndex = 17;
-            label3.Text = "The Lebanese cucumber is green skinned, white fleshed and only 15 cm long. It has a juicy texture and a tender skin that does not need to be peeled. Price: 1.78 / 1ea";
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.DarkSlateBlue;
-            button1.ForeColor = SystemColors.ActiveCaptionText;
-            button1.Location = new Point(3, 211);
-            button1.Name = "button1";
-            button1.Size = new Size(308, 27);
-            button1.TabIndex = 16;
-            button1.Text = "Add to cart";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Cursor = Cursors.Cross;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(3, 3);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(317, 138);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 15;
-            pictureBox2.TabStop = false;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(3, 144);
-            label4.MaximumSize = new Size(315, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(308, 64);
-            label4.TabIndex = 17;
-            label4.Text = "The Lebanese cucumber is green skinned, white fleshed and only 15 cm long. It has a juicy texture and a tender skin that does not need to be peeled. Price: 1.78 / 1ea";
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.DarkSlateBlue;
-            button2.ForeColor = SystemColors.ActiveCaptionText;
-            button2.Location = new Point(3, 211);
-            button2.Name = "button2";
-            button2.Size = new Size(308, 27);
-            button2.TabIndex = 16;
-            button2.Text = "Add to cart";
-            button2.UseVisualStyleBackColor = false;
             // 
             // flowLayoutPanel8
             // 
@@ -458,17 +450,56 @@
             flowLayoutPanel13.Size = new Size(320, 295);
             flowLayoutPanel13.TabIndex = 24;
             // 
+            // lblRecommendItemText
+            // 
+            lblRecommendItemText.AutoSize = true;
+            lblRecommendItemText.Font = new Font("Bernard MT Condensed", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblRecommendItemText.Location = new Point(433, 129);
+            lblRecommendItemText.MaximumSize = new Size(300, 193);
+            lblRecommendItemText.MinimumSize = new Size(300, 193);
+            lblRecommendItemText.Name = "lblRecommendItemText";
+            lblRecommendItemText.Size = new Size(300, 193);
+            lblRecommendItemText.TabIndex = 10;
+            lblRecommendItemText.Text = "The Lebanese cucumber is green skinned, white fleshed and only 15 cm long. It has a juicy texture and a tender skin that does not need to be peeled. Price: 1.78 / 1ea";
+            lblRecommendItemText.Click += lblRecommendItemText_Click;
+            // 
+            // lblRecommendItem
+            // 
+            lblRecommendItem.AutoSize = true;
+            lblRecommendItem.Font = new Font("Bernard MT Condensed", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblRecommendItem.Location = new Point(433, 326);
+            lblRecommendItem.MaximumSize = new Size(300, 0);
+            lblRecommendItem.MinimumSize = new Size(300, 0);
+            lblRecommendItem.Name = "lblRecommendItem";
+            lblRecommendItem.Size = new Size(300, 22);
+            lblRecommendItem.TabIndex = 14;
+            lblRecommendItem.Text = "Item:";
+            // 
+            // lblRecommendPrice
+            // 
+            lblRecommendPrice.AutoSize = true;
+            lblRecommendPrice.Font = new Font("Bernard MT Condensed", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblRecommendPrice.Location = new Point(433, 358);
+            lblRecommendPrice.MaximumSize = new Size(300, 0);
+            lblRecommendPrice.MinimumSize = new Size(300, 0);
+            lblRecommendPrice.Name = "lblRecommendPrice";
+            lblRecommendPrice.Size = new Size(300, 22);
+            lblRecommendPrice.TabIndex = 15;
+            lblRecommendPrice.Text = "Price:";
+            // 
             // MainPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSlateBlue;
             ClientSize = new Size(1013, 749);
+            Controls.Add(lblRecommendPrice);
+            Controls.Add(lblRecommendItem);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(btnAddtocart);
             Controls.Add(btnNextItem);
             Controls.Add(lblRecommendItemText);
-            Controls.Add(pictureBox10);
+            Controls.Add(PicRecommend);
             Controls.Add(btnLogOut);
             Controls.Add(btnProfile);
             Controls.Add(btnChecklist);
@@ -481,17 +512,17 @@
             Name = "MainPage";
             Text = "MainPage";
             Load += MainPage_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PicRecommend).EndInit();
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel2.ResumeLayout(false);
             flowLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)PicItem1).EndInit();
             flowLayoutPanel3.ResumeLayout(false);
             flowLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)PicItem2).EndInit();
             flowLayoutPanel4.ResumeLayout(false);
             flowLayoutPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)PicCucumber).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PicItem3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -505,7 +536,7 @@
         private Button btnChecklist;
         private Button btnProfile;
         private Button btnLogOut;
-        private PictureBox pictureBox10;
+        private PictureBox PicRecommend;
         private Button btnNextItem;
         private Button btnAddtocart;
         private FlowLayoutPanel flowLayoutPanel1;
@@ -516,20 +547,22 @@
         private FlowLayoutPanel flowLayoutPanel5;
         private FlowLayoutPanel flowLayoutPanel6;
         private FlowLayoutPanel flowLayoutPanel7;
-        private PictureBox PicCucumber;
-        private Label lblCucumber;
-        private Button btnCucumber;
-        private PictureBox pictureBox1;
-        private Label label3;
-        private Button button1;
-        private PictureBox pictureBox2;
-        private Label label4;
-        private Button button2;
+        private PictureBox PicItem1;
+        private Label lblItem1;
+        private Button btnItem1;
+        private PictureBox PicItem2;
+        private Label lblItem2;
+        private Button btnItem2;
+        private PictureBox PicItem3;
+        private Label lblItem3;
+        private Button btnItem3;
         private FlowLayoutPanel flowLayoutPanel8;
         private FlowLayoutPanel flowLayoutPanel9;
         private FlowLayoutPanel flowLayoutPanel10;
         private FlowLayoutPanel flowLayoutPanel11;
         private FlowLayoutPanel flowLayoutPanel12;
         private FlowLayoutPanel flowLayoutPanel13;
+        private Label lblRecommendItem;
+        private Label lblRecommendPrice;
     }
 }
