@@ -1,4 +1,5 @@
 using System.Xml;
+using System.Xml.Linq;
 
 namespace ItemIQ
 {
@@ -8,7 +9,8 @@ namespace ItemIQ
         {
             InitializeComponent();
         }
-
+        public static string Username = "";
+        public static string Password = "";
         private void txtUsername_TextChanged(object sender, EventArgs e)
         {
 
@@ -24,10 +26,11 @@ namespace ItemIQ
         {
             string username = txtUsername.Text;
             string password = txtPassword.Text;
+            int SessionID;
             bool LoginDetails = false;
             string filePath = "C:\\Users\\AND0043\\Desktop\\testingforcode\\LoginDetails.xml";
 
-            string currentUsernames = "", currentEmails = "", currentPasswords = "";
+            string currentUsernames = "", currentEmails = "", currentPasswords = "", lastSessionID = "";
             using (XmlReader reader = XmlReader.Create(filePath))
             {
 
@@ -48,11 +51,11 @@ namespace ItemIQ
                                 break;
                             case "Password":
                                 currentPasswords = reader.ReadString();
+                                if (username == currentUsernames || password == currentPasswords)
+                                {
+                                    LoginDetails = true;
+                                }
                                 break;
-                        }
-                        if (username == currentUsernames || password == currentPasswords)
-                        {
-                            LoginDetails = true;
                         }
 
                     }
@@ -63,7 +66,8 @@ namespace ItemIQ
 
             if (LoginDetails == true)
             {
-                this.Hide();
+                Username = txtUsername.Text;
+                Password = txtPassword.Text;
                 // Create a new instance of StaffMainScreen form
                 MainPage mainPage = new MainPage();
 

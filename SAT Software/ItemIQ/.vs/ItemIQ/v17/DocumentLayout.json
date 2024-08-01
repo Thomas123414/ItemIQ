@@ -3,28 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|solutionrelative:mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|c:\\users\\and0043\\documents\\github\\itemiq\\sat software\\itemiq\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|solutionrelative:mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|solutionrelative:signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|solutionrelative:signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|solutionrelative:checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|c:\\users\\and0043\\documents\\github\\itemiq\\sat software\\itemiq\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|solutionrelative:signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|c:\\users\\and0043\\documents\\github\\itemiq\\sat software\\itemiq\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|c:\\users\\and0043\\documents\\github\\itemiq\\sat software\\itemiq\\addingproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|solutionrelative:addingproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|c:\\users\\and0043\\documents\\github\\itemiq\\sat software\\itemiq\\addingproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|solutionrelative:addingproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|solutionrelative:signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|solutionrelative:mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -37,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|solutionrelative:personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|solutionrelative:checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E54C51CA-F47C-4825-BBD5-3A6A92B6FA28}|ItemIQ.csproj|C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\checklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,17 +66,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAYwD0AAAANAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAqwAwAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-19T01:27:04.971Z",
               "IsPinned": true,
@@ -76,26 +84,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T02:43:54.026Z",
+              "WhenOpened": "2024-08-01T11:46:11.526Z",
               "IsPinned": true,
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SignUp.cs",
               "DocumentMoniker": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\SignUp.cs",
               "RelativeDocumentMoniker": "SignUp.cs",
               "ToolTip": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\SignUp.cs",
               "RelativeToolTip": "SignUp.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAA6wCYAAAAsAAAA",
+              "ViewState": "AQIAALYAAAAAAAAAAAAAAJUAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-19T01:44:53.126Z",
               "IsPinned": true,
@@ -103,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "SignUp.cs [Design]",
               "DocumentMoniker": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\SignUp.cs",
               "RelativeDocumentMoniker": "SignUp.cs",
@@ -111,18 +119,17 @@
               "RelativeToolTip": "SignUp.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-19T01:34:27.758Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainPage.cs",
               "DocumentMoniker": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\MainPage.cs",
               "RelativeDocumentMoniker": "MainPage.cs",
               "ToolTip": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\MainPage.cs",
               "RelativeToolTip": "MainPage.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAAA4wLkAAAAmAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABcAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T01:38:16.996Z",
               "IsPinned": true,
@@ -130,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "MainPage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\MainPage.cs",
               "RelativeDocumentMoniker": "MainPage.cs",
@@ -143,20 +150,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "Checkout.cs",
               "DocumentMoniker": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\Checkout.cs",
               "RelativeDocumentMoniker": "Checkout.cs",
               "ToolTip": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\Checkout.cs",
               "RelativeToolTip": "Checkout.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAwEkAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T02:27:50.165Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Checkout.cs [Design]",
               "DocumentMoniker": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\Checkout.cs",
               "RelativeDocumentMoniker": "Checkout.cs",
@@ -164,11 +172,12 @@
               "RelativeToolTip": "Checkout.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T02:38:55.026Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Checklist.cs",
               "DocumentMoniker": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\Checklist.cs",
               "RelativeDocumentMoniker": "Checklist.cs",
@@ -181,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Checklist.cs [Design]",
               "DocumentMoniker": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\Checklist.cs",
               "RelativeDocumentMoniker": "Checklist.cs",
@@ -193,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Personal.cs",
               "DocumentMoniker": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\Personal.cs",
               "RelativeDocumentMoniker": "Personal.cs",
@@ -206,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Personal.cs [Design]",
               "DocumentMoniker": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\Personal.cs",
               "RelativeDocumentMoniker": "Personal.cs",
@@ -215,6 +224,33 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T02:19:07.461Z",
               "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "addingproducts.cs",
+              "DocumentMoniker": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\addingproducts.cs",
+              "RelativeDocumentMoniker": "addingproducts.cs",
+              "ToolTip": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\addingproducts.cs",
+              "RelativeToolTip": "addingproducts.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T11:21:13.862Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "addingproducts.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\addingproducts.cs",
+              "RelativeDocumentMoniker": "addingproducts.cs",
+              "ToolTip": "C:\\Users\\AND0043\\Documents\\GitHub\\ItemIQ\\SAT Software\\ItemIQ\\addingproducts.cs [Design]",
+              "RelativeToolTip": "addingproducts.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T11:21:10.665Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             }
           ]
         }

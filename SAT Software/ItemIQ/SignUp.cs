@@ -35,6 +35,7 @@ namespace ItemIQ
             string username = txtUsername.Text;
             string email = txtEmail.Text;
             string password = txtPassword.Text;
+            string SessionId = username;
             bool Usernamealreadyexists = false;
             bool Emailalreadyexists = false;
             bool Existingdetails = false;
@@ -103,7 +104,7 @@ namespace ItemIQ
             }
             else
             {
-                
+
                 try
                 {
                     if (!File.Exists(filePath))
@@ -158,6 +159,38 @@ namespace ItemIQ
 
                         // Display form2
                         LoginPage.Show();
+                    }
+                    string filePathSettings = "C:\\Users\\AND0043\\Desktop\\testingforcode\\" + $"{username}.xml";
+                    if (!File.Exists(filePathSettings))
+                    {
+                        XmlWriterSettings xmlWriterSettings = new XmlWriterSettings
+                        {
+                            Indent = true,
+                            NewLineOnAttributes = true
+                        };
+                        using (XmlWriter xmlWriter = XmlWriter.Create(filePathSettings, xmlWriterSettings))
+                        {
+                            xmlWriter.WriteStartDocument();
+                            xmlWriter.WriteStartElement("PersonalSettings");
+
+                            xmlWriter.WriteStartElement("Personal");
+                            xmlWriter.WriteElementString("SessionID", "0");
+                            xmlWriter.WriteEndElement();
+
+                            xmlWriter.WriteEndElement();
+                            xmlWriter.WriteEndDocument();
+                        }
+                    }
+                    else
+                    {
+                        XDocument xDocument = XDocument.Load(filePathSettings);
+                        XElement root = xDocument.Element("PersonalSettings");
+                        if (root != null)
+                        {
+                            root.Add(new XElement("Personal",
+                                new XElement("SessionID", "0")));
+                            xDocument.Save(filePath);
+                        }
                     }
                 }
                 catch (Exception ex)

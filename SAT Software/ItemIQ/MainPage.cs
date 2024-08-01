@@ -23,7 +23,11 @@ namespace ItemIQ
 
         public void Additemtocart(string ItemName, string ItemPrice)
         {
-            string filePath = "C:\\Users\\AND0043\\Desktop\\testingforcode\\CartOrder.xml";
+            string UserName = Form1.Username;
+            string PassWord = Form1.Password;
+            Random rnd = new Random();
+            string CartOrderID = UserName + $"{rnd.Next(1,999999999)}";
+            string filePath = $"C:\\Users\\AND0043\\Desktop\\testingforcode\\CartOrders\\CartOrder{CartOrderID}.xml";
             if (!File.Exists(filePath))
             {
                 XmlWriterSettings xmlWriterSettings = new XmlWriterSettings
