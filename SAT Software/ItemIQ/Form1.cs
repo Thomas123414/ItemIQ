@@ -11,6 +11,7 @@ namespace ItemIQ
         }
         public static string Username = "";
         public static string Password = "";
+        public static string Email = "";
         private void txtUsername_TextChanged(object sender, EventArgs e)
         {
 
@@ -26,11 +27,10 @@ namespace ItemIQ
         {
             string username = txtUsername.Text;
             string password = txtPassword.Text;
-            int SessionID;
             bool LoginDetails = false;
             string filePath = "C:\\Users\\AND0043\\Desktop\\testingforcode\\LoginDetails.xml";
 
-            string currentUsernames = "", currentEmails = "", currentPasswords = "", lastSessionID = "";
+            string currentUsernames = "", currentEmails = "", currentPasswords = "";
             using (XmlReader reader = XmlReader.Create(filePath))
             {
 
@@ -54,6 +54,7 @@ namespace ItemIQ
                                 if (username == currentUsernames || password == currentPasswords)
                                 {
                                     LoginDetails = true;
+                                    Email = currentEmails;
                                 }
                                 break;
                         }
@@ -68,6 +69,9 @@ namespace ItemIQ
             {
                 Username = txtUsername.Text;
                 Password = txtPassword.Text;
+                txtUsername.Clear();
+                txtPassword.Clear();
+                this.Hide();
                 // Create a new instance of StaffMainScreen form
                 MainPage mainPage = new MainPage();
 

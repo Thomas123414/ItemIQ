@@ -11,6 +11,8 @@ using System.Xml;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using System.Xml.Linq;
+using System.IO;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace ItemIQ
 {
@@ -23,11 +25,31 @@ namespace ItemIQ
 
         public void Additemtocart(string ItemName, string ItemPrice)
         {
+            bool Payed = Checkout.Payedfor;
+
             string UserName = Form1.Username;
             string PassWord = Form1.Password;
+            string Email = Form1.Email;
+            string filePathSettings = "C:\\Users\\AND0043\\Desktop\\testingforcode\\" + $"{UserName}.xml";
             Random rnd = new Random();
-            string CartOrderID = UserName + $"{rnd.Next(1,999999999)}";
-            string filePath = $"C:\\Users\\AND0043\\Desktop\\testingforcode\\CartOrders\\CartOrder{CartOrderID}.xml";
+            string CartOrderID = UserName + "_CartOrder";
+            string filePath = $"C:\\Users\\AND0043\\Desktop\\testingforcode\\CartOrders\\{CartOrderID}.xml";
+            if (File.Exists(filePath) && Payed == true)
+            {
+                var sourcePath = filePath;
+                var destinationPath = $"C:\\Users\\AND0043\\Desktop\\testingforcode\\Pastorders\\Last_{CartOrderID}.xml";
+                if (File.Exists(destinationPath))
+                {
+                    File.Delete(destinationPath);
+                }
+                File.Move(sourcePath, destinationPath);
+                File.Delete(sourcePath);
+                var doc = XDocument.Load(filePathSettings);
+                var node = doc.Descendants("Personal").FirstOrDefault(Player => Player.Element("SessionID").Value == "0");
+                node.SetElementValue("LastCartOrderID", $"Last_{CartOrderID}.xml");
+                //Save the changes to the file
+                doc.Save(filePathSettings);
+            }
             if (!File.Exists(filePath))
             {
                 XmlWriterSettings xmlWriterSettings = new XmlWriterSettings
@@ -144,7 +166,6 @@ namespace ItemIQ
 
         private void MainPage_Load(object sender, EventArgs e)
         {
- 
             string filePath = "C:\\Users\\AND0043\\Desktop\\testingforcode\\Productdetails.xml";
             float Price = 100;
             string ID = "", Link = "", nameItem = "", desItem = "";

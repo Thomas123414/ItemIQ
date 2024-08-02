@@ -34,6 +34,7 @@
             btnChecklist = new Button();
             btnCheckout = new Button();
             btnHome = new Button();
+            listView1 = new ListView();
             SuspendLayout();
             // 
             // btnLogOut
@@ -101,12 +102,21 @@
             btnHome.UseVisualStyleBackColor = false;
             btnHome.Click += btnHome_Click;
             // 
+            // listView1
+            // 
+            listView1.Location = new Point(3, 96);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(1002, 277);
+            listView1.TabIndex = 14;
+            listView1.UseCompatibleStateImageBehavior = false;
+            // 
             // Checkout
             // 
             AutoScaleDimensions = new SizeF(7F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSlateBlue;
             ClientSize = new Size(1017, 480);
+            Controls.Add(listView1);
             Controls.Add(btnLogOut);
             Controls.Add(btnProfile);
             Controls.Add(btnChecklist);
@@ -126,5 +136,6 @@
         private Button btnChecklist;
         private Button btnCheckout;
         private Button btnHome;
+        private ListView listView1;
     }
 }

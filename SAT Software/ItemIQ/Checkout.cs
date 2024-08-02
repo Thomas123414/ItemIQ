@@ -16,7 +16,7 @@ namespace ItemIQ
         {
             InitializeComponent();
         }
-
+        public static bool Payedfor = false;
         private void btnHome_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -71,7 +71,7 @@ namespace ItemIQ
 
         private void Checkout_Load(object sender, EventArgs e)
         {
-
+            Payedfor = true;
         }
     }
 }

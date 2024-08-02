@@ -175,6 +175,7 @@ namespace ItemIQ
 
                             xmlWriter.WriteStartElement("Personal");
                             xmlWriter.WriteElementString("SessionID", "0");
+                            xmlWriter.WriteElementString("LastCartOrderID", "");
                             xmlWriter.WriteEndElement();
 
                             xmlWriter.WriteEndElement();
@@ -188,7 +189,8 @@ namespace ItemIQ
                         if (root != null)
                         {
                             root.Add(new XElement("Personal",
-                                new XElement("SessionID", "0")));
+                                new XElement("SessionID", "0"),
+                                new XElement("LastCartOrderID", "")));
                             xDocument.Save(filePath);
                         }
                     }
