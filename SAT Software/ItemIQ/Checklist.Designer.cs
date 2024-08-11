@@ -34,6 +34,14 @@
             btnChecklist = new Button();
             btnCheckout = new Button();
             btnHome = new Button();
+            CLB = new CheckedListBox();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            txtChecklistName = new TextBox();
+            txtChecklistPrice = new TextBox();
+            btnChecklistAdd = new Button();
+            lblChecklistPrice = new Label();
             SuspendLayout();
             // 
             // btnLogOut
@@ -101,12 +109,97 @@
             btnHome.UseVisualStyleBackColor = false;
             btnHome.Click += btnHome_Click;
             // 
+            // CLB
+            // 
+            CLB.FormattingEnabled = true;
+            CLB.Items.AddRange(new object[] { "" });
+            CLB.Location = new Point(12, 70);
+            CLB.Name = "CLB";
+            CLB.ScrollAlwaysVisible = true;
+            CLB.Size = new Size(682, 274);
+            CLB.TabIndex = 14;
+            CLB.SelectedIndexChanged += checkedListBox1_SelectedIndexChanged;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Bernard MT Condensed", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(754, 80);
+            label1.Name = "label1";
+            label1.Size = new Size(198, 31);
+            label1.TabIndex = 15;
+            label1.Text = "Add to checklist!";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Bernard MT Condensed", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(700, 140);
+            label2.Name = "label2";
+            label2.Size = new Size(89, 19);
+            label2.TabIndex = 16;
+            label2.Text = "Item Name:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Bernard MT Condensed", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(738, 174);
+            label3.Name = "label3";
+            label3.Size = new Size(51, 19);
+            label3.TabIndex = 17;
+            label3.Text = "Price:";
+            // 
+            // txtChecklistName
+            // 
+            txtChecklistName.Location = new Point(795, 140);
+            txtChecklistName.Name = "txtChecklistName";
+            txtChecklistName.Size = new Size(207, 23);
+            txtChecklistName.TabIndex = 18;
+            // 
+            // txtChecklistPrice
+            // 
+            txtChecklistPrice.Location = new Point(795, 174);
+            txtChecklistPrice.Name = "txtChecklistPrice";
+            txtChecklistPrice.Size = new Size(207, 23);
+            txtChecklistPrice.TabIndex = 19;
+            // 
+            // btnChecklistAdd
+            // 
+            btnChecklistAdd.BackColor = Color.DarkSlateBlue;
+            btnChecklistAdd.Font = new Font("Bernard MT Condensed", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnChecklistAdd.Location = new Point(743, 229);
+            btnChecklistAdd.Name = "btnChecklistAdd";
+            btnChecklistAdd.Size = new Size(209, 33);
+            btnChecklistAdd.TabIndex = 20;
+            btnChecklistAdd.Text = "Add item to checklist!";
+            btnChecklistAdd.UseVisualStyleBackColor = false;
+            btnChecklistAdd.Click += btnChecklistAdd_Click;
+            // 
+            // lblChecklistPrice
+            // 
+            lblChecklistPrice.AutoSize = true;
+            lblChecklistPrice.Font = new Font("Bernard MT Condensed", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblChecklistPrice.Location = new Point(718, 306);
+            lblChecklistPrice.Name = "lblChecklistPrice";
+            lblChecklistPrice.Size = new Size(159, 22);
+            lblChecklistPrice.TabIndex = 21;
+            lblChecklistPrice.Text = "Total price of list:";
+            // 
             // Checklist
             // 
             AutoScaleDimensions = new SizeF(7F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSlateBlue;
-            ClientSize = new Size(1014, 480);
+            ClientSize = new Size(1014, 353);
+            Controls.Add(lblChecklistPrice);
+            Controls.Add(btnChecklistAdd);
+            Controls.Add(txtChecklistPrice);
+            Controls.Add(txtChecklistName);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(CLB);
             Controls.Add(btnLogOut);
             Controls.Add(btnProfile);
             Controls.Add(btnChecklist);
@@ -117,6 +210,7 @@
             Text = "Checklist";
             Load += Checklist_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -126,5 +220,13 @@
         private Button btnChecklist;
         private Button btnCheckout;
         private Button btnHome;
+        private CheckedListBox CLB;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private TextBox txtChecklistName;
+        private TextBox txtChecklistPrice;
+        private Button btnChecklistAdd;
+        private Label lblChecklistPrice;
     }
 }

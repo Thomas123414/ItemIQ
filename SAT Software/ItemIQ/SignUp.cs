@@ -26,7 +26,7 @@ namespace ItemIQ
         private void SignUp_Load(object sender, EventArgs e)
         {
             txtUsername.Clear();
-            txtPassword.Clear();
+            txtPassword.Clear();    //clearing data 
             txtEmail.Clear();
         }
 
@@ -34,46 +34,46 @@ namespace ItemIQ
         {
             string username = txtUsername.Text;
             string email = txtEmail.Text;
-            string password = txtPassword.Text;
+            string password = txtPassword.Text; //variables for my data
             string SessionId = username;
-            bool Usernamealreadyexists = false;
+            bool Usernamealreadyexists = false; //booleans expresssions
             bool Emailalreadyexists = false;
             bool Existingdetails = false;
-            string filePath = "C:\\Users\\AND0043\\Desktop\\testingforcode\\LoginDetails.xml";
+            string filePath = "C:\\Users\\AND0043\\Desktop\\testingforcode\\LoginDetails.xml";  //file path to the location of the xml file i need
 
-            string currentUsernames = "", currentEmails = "", currentPasswords = "";
+            string currentUsernames = "", currentEmails = "", currentPasswords = ""; //variables for my data
             if (File.Exists(filePath))
             {
-                using (XmlReader reader = XmlReader.Create(filePath))
+                using (XmlReader reader = XmlReader.Create(filePath)) // enables xml reader for to look at filepath which is location of file
                 {
 
                     while (reader.Read())
                     {
-                        // ListViewItem listItem = new ListViewItem();   //"Row" object.
+                        //when reading it starts at the first element
                         if (reader.IsStartElement())
                         {
 
-                            //return only when you have START tag  
+                            //switch statement/ if statement to read through each subelement and give me the data back
                             switch (reader.Name.ToString())
                             {
-                                case "User":       //Store the data element firstname 
+                                case "User":       //reads data relating to "User"
                                     currentUsernames = reader.ReadString();
                                     break;
-                                case "Email":
+                                case "Email":   //reads data relating to "User"
                                     currentEmails = reader.ReadString();
                                     break;
-                                case "Password":
+                                case "Password":    //reads data relating to "User"
                                     currentPasswords = reader.ReadString();
                                     break;
                             }
-                            if (username == currentUsernames || email == currentEmails)
+                            if (username == currentUsernames || email == currentEmails) //vaidation for existing details so that there cant be the same profiles as each other 
                             {
                                 Existingdetails = true;
-                                if (username == currentUsernames)
+                                if (username == currentUsernames) //individual details
                                 {
                                     Usernamealreadyexists = true;
                                 }
-                                else if (email == currentEmails)
+                                if (email == currentEmails)     //individual details
                                 {
                                     Emailalreadyexists = true;
                                 }
@@ -86,18 +86,18 @@ namespace ItemIQ
                 }
             }
 
-            if (Existingdetails == true)
+            if (Existingdetails == true)    //vaidation for existing details
             {
-                if (Usernamealreadyexists == true)
+                if (Usernamealreadyexists == true) //to tell the user that it is alreayd been used
                 {
                     MessageBox.Show("Username is already used! Try again with different Username");
                 }
-                if (Emailalreadyexists == true)
+                if (Emailalreadyexists == true)     //to tell the user that it is alreayd been used
                 {
                     MessageBox.Show("Email is already used! Try again with different Email");
                 }
             }
-            else if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
+            else if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password)) // existence vaidation to make sure you fill in every textbox required 
             {
                 MessageBox.Show("Make sure to fill in all your details!");
                 return;
@@ -116,7 +116,7 @@ namespace ItemIQ
                         };
                         using (XmlWriter xmlWriter = XmlWriter.Create(filePath, xmlWriterSettings))
                         {
-                            xmlWriter.WriteStartDocument();
+                            xmlWriter.WriteStartDocument();                         //writing to xml login details of the user that  they have put in so that it can be read later
                             xmlWriter.WriteStartElement("Details");
 
                             xmlWriter.WriteStartElement("Detail");
@@ -129,13 +129,13 @@ namespace ItemIQ
                             xmlWriter.WriteEndDocument();
                         }
                         this.Hide();
-                        // Create a new instance of StaffMainScreen form
+                        // Create a new instance of LoginPage form
                         Form1 LoginPage = new Form1();
 
-                        // Subscribe to the Closed event of form2 to close the current form when form2 is closed
+                        // Subscribe to the Closed event of form to close the current form when other form is closed
                         LoginPage.Closed += (s, args) => this.Close();
 
-                        // Display form2
+                        // Display a form
                         LoginPage.Show();
                     }
                     else
@@ -144,20 +144,20 @@ namespace ItemIQ
                         XElement root = xDocument.Element("Details");
                         if (root != null)
                         {
-                            root.Add(new XElement("Detail",
+                            root.Add(new XElement("Detail",                     //if the xml file already exist it just updates the file with more details of login user so that they can be read later
                                 new XElement("User", username.Trim()),
                                 new XElement("Email", email.Trim()),
                                 new XElement("Password", password.Trim())));
-                            xDocument.Save(filePath);
+                            xDocument.Save(filePath);       //saving file
                         }
                         this.Hide();
-                        // Create a new instance of StaffMainScreen form
+                        // Create a new instance of LoginPage form
                         Form1 LoginPage = new Form1();
 
-                        // Subscribe to the Closed event of form2 to close the current form when form2 is closed
+                        // Subscribe to the Closed event of form to close the current form when other form is closed
                         LoginPage.Closed += (s, args) => this.Close();
 
-                        // Display form2
+                        // Display a form
                         LoginPage.Show();
                     }
                     string filePathSettings = "C:\\Users\\AND0043\\Desktop\\testingforcode\\" + $"{username}.xml";
@@ -171,7 +171,7 @@ namespace ItemIQ
                         using (XmlWriter xmlWriter = XmlWriter.Create(filePathSettings, xmlWriterSettings))
                         {
                             xmlWriter.WriteStartDocument();
-                            xmlWriter.WriteStartElement("PersonalSettings");
+                            xmlWriter.WriteStartElement("PersonalSettings");            //writing to xml login details of the user that  they have put in so that it can be read later
 
                             xmlWriter.WriteStartElement("Personal");
                             xmlWriter.WriteElementString("SessionID", "0");
@@ -188,16 +188,16 @@ namespace ItemIQ
                         XElement root = xDocument.Element("PersonalSettings");
                         if (root != null)
                         {
-                            root.Add(new XElement("Personal",
+                            root.Add(new XElement("Personal",                   //if the xml file already exist it just updates the file with more details of login user so that they can be read later
                                 new XElement("SessionID", "0"),
                                 new XElement("LastCartOrderID", "")));
-                            xDocument.Save(filePath);
+                            xDocument.Save(filePath);                           //saving file 
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"An error occurred: {ex.Message}");
+                    MessageBox.Show($"An error occurred: {ex.Message}");        //to catch errors in the code and tell you the problem
                 }
             }
         }

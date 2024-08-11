@@ -54,8 +54,17 @@
             lblItem3 = new Label();
             btnItem3 = new Button();
             flowLayoutPanel5 = new FlowLayoutPanel();
+            PicItem4 = new PictureBox();
+            lblItem4 = new Label();
+            btnItem4 = new Button();
             flowLayoutPanel6 = new FlowLayoutPanel();
+            PicItem5 = new PictureBox();
+            lblItem5 = new Label();
+            btnItem5 = new Button();
             flowLayoutPanel7 = new FlowLayoutPanel();
+            PicItem6 = new PictureBox();
+            lblItem6 = new Label();
+            btnItem6 = new Button();
             flowLayoutPanel8 = new FlowLayoutPanel();
             flowLayoutPanel9 = new FlowLayoutPanel();
             flowLayoutPanel10 = new FlowLayoutPanel();
@@ -73,6 +82,12 @@
             ((System.ComponentModel.ISupportInitialize)PicItem2).BeginInit();
             flowLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)PicItem3).BeginInit();
+            flowLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)PicItem4).BeginInit();
+            flowLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)PicItem5).BeginInit();
+            flowLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)PicItem6).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -84,7 +99,6 @@
             label1.Size = new Size(415, 57);
             label1.TabIndex = 1;
             label1.Text = "Grocery Store Items:";
-            label1.Click += label1_Click;
             // 
             // textBox1
             // 
@@ -94,7 +108,6 @@
             textBox1.PlaceholderText = "Search:";
             textBox1.Size = new Size(269, 36);
             textBox1.TabIndex = 2;
-            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label2
             // 
@@ -118,7 +131,7 @@
             btnHome.TabIndex = 4;
             btnHome.Text = "HomePage";
             btnHome.UseVisualStyleBackColor = false;
-            btnHome.Click += btnHome_Click;
+            btnHome.Click += btnHome_Click_1;
             // 
             // btnCheckout
             // 
@@ -132,7 +145,7 @@
             btnCheckout.TabIndex = 5;
             btnCheckout.Text = "Checkout";
             btnCheckout.UseVisualStyleBackColor = false;
-            btnCheckout.Click += btnCheckout_Click;
+            btnCheckout.Click += btnCheckout_Click_1;
             // 
             // btnChecklist
             // 
@@ -146,7 +159,7 @@
             btnChecklist.TabIndex = 6;
             btnChecklist.Text = "Checklist";
             btnChecklist.UseVisualStyleBackColor = false;
-            btnChecklist.Click += btnChecklist_Click;
+            btnChecklist.Click += btnChecklist_Click_1;
             // 
             // btnProfile
             // 
@@ -158,7 +171,7 @@
             btnProfile.Size = new Size(202, 63);
             btnProfile.TabIndex = 7;
             btnProfile.UseVisualStyleBackColor = false;
-            btnProfile.Click += btnProfile_Click;
+            btnProfile.Click += btnProfile_Click_1;
             // 
             // btnLogOut
             // 
@@ -170,12 +183,12 @@
             btnLogOut.Size = new Size(202, 63);
             btnLogOut.TabIndex = 8;
             btnLogOut.UseVisualStyleBackColor = false;
-            btnLogOut.Click += btnLogOut_Click;
+            btnLogOut.Click += btnLogOut_Click_1;
             // 
             // PicRecommend
             // 
             PicRecommend.Image = (Image)resources.GetObject("PicRecommend.Image");
-            PicRecommend.Location = new Point(12, 129);
+            PicRecommend.Location = new Point(1, 129);
             PicRecommend.Name = "PicRecommend";
             PicRecommend.Size = new Size(415, 254);
             PicRecommend.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -194,6 +207,7 @@
             btnNextItem.TabIndex = 11;
             btnNextItem.Text = "Next item";
             btnNextItem.UseVisualStyleBackColor = false;
+            btnNextItem.Click += btnNextItem_Click;
             // 
             // btnAddtocart
             // 
@@ -207,6 +221,7 @@
             btnAddtocart.TabIndex = 12;
             btnAddtocart.Text = "Add To Cart";
             btnAddtocart.UseVisualStyleBackColor = false;
+            btnAddtocart.Click += btnAddtocart_Click;
             // 
             // flowLayoutPanel1
             // 
@@ -240,7 +255,6 @@
             flowLayoutPanel2.Name = "flowLayoutPanel2";
             flowLayoutPanel2.Size = new Size(320, 295);
             flowLayoutPanel2.TabIndex = 14;
-            flowLayoutPanel2.Paint += flowLayoutPanel2_Paint;
             // 
             // PicItem1
             // 
@@ -252,7 +266,6 @@
             PicItem1.SizeMode = PictureBoxSizeMode.StretchImage;
             PicItem1.TabIndex = 0;
             PicItem1.TabStop = false;
-            PicItem1.Click += pictureBox1_Click_1;
             // 
             // lblItem1
             // 
@@ -371,6 +384,9 @@
             // 
             // flowLayoutPanel5
             // 
+            flowLayoutPanel5.Controls.Add(PicItem4);
+            flowLayoutPanel5.Controls.Add(lblItem4);
+            flowLayoutPanel5.Controls.Add(btnItem4);
             flowLayoutPanel5.Dock = DockStyle.Bottom;
             flowLayoutPanel5.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel5.Location = new Point(3, 304);
@@ -378,8 +394,45 @@
             flowLayoutPanel5.Size = new Size(320, 295);
             flowLayoutPanel5.TabIndex = 16;
             // 
+            // PicItem4
+            // 
+            PicItem4.Cursor = Cursors.Cross;
+            PicItem4.Image = (Image)resources.GetObject("PicItem4.Image");
+            PicItem4.Location = new Point(3, 3);
+            PicItem4.Name = "PicItem4";
+            PicItem4.Size = new Size(317, 192);
+            PicItem4.SizeMode = PictureBoxSizeMode.StretchImage;
+            PicItem4.TabIndex = 15;
+            PicItem4.TabStop = false;
+            // 
+            // lblItem4
+            // 
+            lblItem4.AutoSize = true;
+            lblItem4.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblItem4.Location = new Point(3, 198);
+            lblItem4.MaximumSize = new Size(315, 0);
+            lblItem4.Name = "lblItem4";
+            lblItem4.Size = new Size(262, 16);
+            lblItem4.TabIndex = 17;
+            lblItem4.Text = "Crunchy corn taco shells, Price: $3.44/100g";
+            // 
+            // btnItem4
+            // 
+            btnItem4.BackColor = Color.DarkSlateBlue;
+            btnItem4.ForeColor = SystemColors.ActiveCaptionText;
+            btnItem4.Location = new Point(3, 217);
+            btnItem4.Name = "btnItem4";
+            btnItem4.Size = new Size(308, 27);
+            btnItem4.TabIndex = 16;
+            btnItem4.Text = "Add to cart";
+            btnItem4.UseVisualStyleBackColor = false;
+            btnItem4.Click += btnItem4_Click;
+            // 
             // flowLayoutPanel6
             // 
+            flowLayoutPanel6.Controls.Add(PicItem5);
+            flowLayoutPanel6.Controls.Add(lblItem5);
+            flowLayoutPanel6.Controls.Add(btnItem5);
             flowLayoutPanel6.Dock = DockStyle.Bottom;
             flowLayoutPanel6.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel6.Location = new Point(329, 304);
@@ -387,14 +440,85 @@
             flowLayoutPanel6.Size = new Size(320, 295);
             flowLayoutPanel6.TabIndex = 17;
             // 
+            // PicItem5
+            // 
+            PicItem5.Cursor = Cursors.Cross;
+            PicItem5.Image = (Image)resources.GetObject("PicItem5.Image");
+            PicItem5.Location = new Point(3, 3);
+            PicItem5.Name = "PicItem5";
+            PicItem5.Size = new Size(317, 192);
+            PicItem5.SizeMode = PictureBoxSizeMode.StretchImage;
+            PicItem5.TabIndex = 15;
+            PicItem5.TabStop = false;
+            // 
+            // lblItem5
+            // 
+            lblItem5.AutoSize = true;
+            lblItem5.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblItem5.Location = new Point(3, 198);
+            lblItem5.MaximumSize = new Size(315, 0);
+            lblItem5.Name = "lblItem5";
+            lblItem5.Size = new Size(312, 48);
+            lblItem5.TabIndex = 17;
+            lblItem5.Text = "Snap frozen to lock in the goodness. Source of fibre for healthy digestion, Source of Vitamin C for a healthy immune system. Price: 5/kg\r\n";
+            // 
+            // btnItem5
+            // 
+            btnItem5.BackColor = Color.DarkSlateBlue;
+            btnItem5.ForeColor = SystemColors.ActiveCaptionText;
+            btnItem5.Location = new Point(3, 249);
+            btnItem5.Name = "btnItem5";
+            btnItem5.Size = new Size(308, 27);
+            btnItem5.TabIndex = 16;
+            btnItem5.Text = "Add to cart";
+            btnItem5.UseVisualStyleBackColor = false;
+            btnItem5.Click += btnItem5_Click;
+            // 
             // flowLayoutPanel7
             // 
+            flowLayoutPanel7.Controls.Add(PicItem6);
+            flowLayoutPanel7.Controls.Add(lblItem6);
+            flowLayoutPanel7.Controls.Add(btnItem6);
             flowLayoutPanel7.Dock = DockStyle.Bottom;
             flowLayoutPanel7.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel7.Location = new Point(655, 304);
             flowLayoutPanel7.Name = "flowLayoutPanel7";
             flowLayoutPanel7.Size = new Size(320, 295);
             flowLayoutPanel7.TabIndex = 18;
+            // 
+            // PicItem6
+            // 
+            PicItem6.Cursor = Cursors.Cross;
+            PicItem6.Image = (Image)resources.GetObject("PicItem6.Image");
+            PicItem6.Location = new Point(3, 3);
+            PicItem6.Name = "PicItem6";
+            PicItem6.Size = new Size(317, 192);
+            PicItem6.SizeMode = PictureBoxSizeMode.StretchImage;
+            PicItem6.TabIndex = 15;
+            PicItem6.TabStop = false;
+            // 
+            // lblItem6
+            // 
+            lblItem6.AutoSize = true;
+            lblItem6.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblItem6.Location = new Point(3, 198);
+            lblItem6.MaximumSize = new Size(315, 0);
+            lblItem6.Name = "lblItem6";
+            lblItem6.Size = new Size(305, 48);
+            lblItem6.TabIndex = 17;
+            lblItem6.Text = "With delicious puffed grains of rice, Kellogg's Rice Bubbles with milk make the perfect breakfast cereal to start your day. Price:  10";
+            // 
+            // btnItem6
+            // 
+            btnItem6.BackColor = Color.DarkSlateBlue;
+            btnItem6.ForeColor = SystemColors.ActiveCaptionText;
+            btnItem6.Location = new Point(3, 249);
+            btnItem6.Name = "btnItem6";
+            btnItem6.Size = new Size(308, 27);
+            btnItem6.TabIndex = 16;
+            btnItem6.Text = "Add to cart";
+            btnItem6.UseVisualStyleBackColor = false;
+            btnItem6.Click += btnItem6_Click;
             // 
             // flowLayoutPanel8
             // 
@@ -461,7 +585,6 @@
             lblRecommendItemText.Size = new Size(300, 193);
             lblRecommendItemText.TabIndex = 10;
             lblRecommendItemText.Text = "The Lebanese cucumber is green skinned, white fleshed and only 15 cm long. It has a juicy texture and a tender skin that does not need to be peeled. Price: 1.78 / 1ea";
-            lblRecommendItemText.Click += lblRecommendItemText_Click;
             // 
             // lblRecommendItem
             // 
@@ -511,7 +634,7 @@
             Font = new Font("Bernard MT Condensed", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Name = "MainPage";
             Text = "MainPage";
-            Load += MainPage_Load;
+            Load += MainPage_Load_1;
             ((System.ComponentModel.ISupportInitialize)PicRecommend).EndInit();
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel2.ResumeLayout(false);
@@ -523,6 +646,15 @@
             flowLayoutPanel4.ResumeLayout(false);
             flowLayoutPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)PicItem3).EndInit();
+            flowLayoutPanel5.ResumeLayout(false);
+            flowLayoutPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)PicItem4).EndInit();
+            flowLayoutPanel6.ResumeLayout(false);
+            flowLayoutPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)PicItem5).EndInit();
+            flowLayoutPanel7.ResumeLayout(false);
+            flowLayoutPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)PicItem6).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -564,5 +696,14 @@
         private FlowLayoutPanel flowLayoutPanel13;
         private Label lblRecommendItem;
         private Label lblRecommendPrice;
+        private PictureBox PicItem4;
+        private Label lblItem4;
+        private Button btnItem4;
+        private PictureBox PicItem5;
+        private Label lblItem5;
+        private Button btnItem5;
+        private PictureBox PicItem6;
+        private Label lblItem6;
+        private Button btnItem6;
     }
 }
