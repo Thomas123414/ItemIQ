@@ -39,7 +39,7 @@ namespace ItemIQ
             bool Usernamealreadyexists = false; //booleans expresssions
             bool Emailalreadyexists = false;
             bool Existingdetails = false;
-            string filePath = "C:\\Users\\AND0043\\Desktop\\testingforcode\\LoginDetails.xml";  //file path to the location of the xml file i need
+            string filePath = "Data\\LoginDetails.xml";  //file path to the location of the xml file i need
 
             string currentUsernames = "", currentEmails = "", currentPasswords = ""; //variables for my data
             if (File.Exists(filePath))
@@ -160,7 +160,7 @@ namespace ItemIQ
                         // Display a form
                         LoginPage.Show();
                     }
-                    string filePathSettings = "C:\\Users\\AND0043\\Desktop\\testingforcode\\" + $"{username}.xml";
+                    string filePathSettings = $"Data\\{username}.xml";
                     if (!File.Exists(filePathSettings))
                     {
                         XmlWriterSettings xmlWriterSettings = new XmlWriterSettings

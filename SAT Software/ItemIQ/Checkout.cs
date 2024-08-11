@@ -79,7 +79,7 @@ namespace ItemIQ
         private void Checkout_Load(object sender, EventArgs e)
         {
             string UserName = Form1.Username;
-            string filePath = $"C:\\Users\\AND0043\\Desktop\\testingforcode\\CartOrders\\{UserName}_CartOrder.xml"; // variables and file path for xml writer
+            string filePath = $"Data\\CartOrders\\{UserName}_CartOrder.xml"; // variables and file path for xml writer
             float Totalforwholecart = 0;
             string ItemName = "", Price = "", Numberofitem = "";
             try

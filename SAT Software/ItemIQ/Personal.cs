@@ -60,14 +60,14 @@ namespace ItemIQ
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             this.Hide();
-            // Create a new instance of ProfilePage form
-            Personal Profilepage = new Personal();
+            // Create a new instance of LoginPage form
+            Form1 Loginpage = new Form1();
 
             // Subscribe to the Closed event of form to close the current form when other form is closed
-            Profilepage.Closed += (s, args) => this.Close();
+            Loginpage.Closed += (s, args) => this.Close();
 
             // Display a form
-            Profilepage.Show();
+            Loginpage.Show();
         }
 
         private void Personal_Load(object sender, EventArgs e)
@@ -82,7 +82,7 @@ namespace ItemIQ
 
             try
             {
-                string filePath = $"C:\\Users\\AND0043\\Desktop\\testingforcode\\Pastorders\\Last_{UserName}_CartOrder.xml";
+                string filePath = $"Data\\Pastorders\\Last_{UserName}_CartOrder.xml";
                 float Totalforwholecart = 0;
                 string ItemName = "", Price = "", Numberofitem = "";
                 using (XmlReader reader = XmlReader.Create(filePath)) // Xml reader which reads a xml file full of login data to see if you aloowed into the app 

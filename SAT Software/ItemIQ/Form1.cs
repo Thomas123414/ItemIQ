@@ -34,7 +34,7 @@ namespace ItemIQ
             else
             {
                 bool LoginDetails = false;
-                string filePath = "C:\\Users\\AND0043\\Desktop\\testingforcode\\LoginDetails.xml"; // pathway in the system to the xml file so i can find it when i need to use it 
+                string filePath = "Data\\LoginDetails.xml"; // pathway in the system to the xml file so i can find it when i need to use it 
 
                 string currentUsernames = "", currentEmails = "", currentPasswords = ""; //variables for data
                 using (XmlReader reader = XmlReader.Create(filePath)) // Xml reader which reads a xml file full of login data to see if you aloowed into the app 

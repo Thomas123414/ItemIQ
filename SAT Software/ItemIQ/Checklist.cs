@@ -81,7 +81,7 @@ namespace ItemIQ
             string PassWord = Form1.Password;
             string Email = Form1.Email;                 //variables for data and file path for xml writer to read from
             float TotalPrice = 0;
-            string filePath = $"C:\\Users\\AND0043\\Desktop\\testingforcode\\Checklist\\{UserName}_Checklist.xml";
+            string filePath = $"Data\\Checklist\\{UserName}_Checklist.xml";
 
             if (File.Exists(filePath))
             {
@@ -142,7 +142,7 @@ namespace ItemIQ
                 string UserName = Form1.Username;
                 string PassWord = Form1.Password;   //variables for data and parses a string to float and a file path for xml to read from
                 string Email = Form1.Email;
-                string filePath = $"C:\\Users\\AND0043\\Desktop\\testingforcode\\Checklist\\{UserName}_Checklist.xml";
+                string filePath = $"Data\\Checklist\\{UserName}_Checklist.xml";
 
                 if (!File.Exists(filePath))
                 {

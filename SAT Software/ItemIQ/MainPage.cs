@@ -30,13 +30,13 @@ namespace ItemIQ
             string UserName = Form1.Username;
             string PassWord = Form1.Password;   //variables for data
             string Email = Form1.Email;
-            string filePathSettings = "C:\\Users\\AND0043\\Desktop\\testingforcode\\" + $"{UserName}.xml"; //file paths 
+            string filePathSettings = $"Data\\{UserName}.xml"; //file paths 
             string CartOrderID = UserName + "_CartOrder";
-            string filePath = $"C:\\Users\\AND0043\\Desktop\\testingforcode\\CartOrders\\{CartOrderID}.xml";
+            string filePath = $"Data\\CartOrders\\{CartOrderID}.xml";
             if (File.Exists(filePath) && Payed == true)
             {
                 var sourcePath = filePath; //file paths
-                var destinationPath = $"C:\\Users\\AND0043\\Desktop\\testingforcode\\Pastorders\\Last_{CartOrderID}.xml";
+                var destinationPath = $"Data\\Pastorders\\Last_{CartOrderID}.xml";
                 if (File.Exists(destinationPath))
                 {
                     File.Delete(destinationPath);       //deleting existing file if they exist
@@ -260,7 +260,7 @@ namespace ItemIQ
 
         private void MainPage_Load_1(object sender, EventArgs e)
         {
-            string filePath = "C:\\Users\\AND0043\\Desktop\\testingforcode\\Productdetails.xml"; //file path for xml writer 
+            string filePath = "Data\\Productdetails.xml"; //file path for xml writer 
             float Price = 100;
             string ID = "", Link = "", nameItem = "", desItem = ""; //variables for data
             string priceItem = "";
@@ -298,7 +298,7 @@ namespace ItemIQ
                                         lblRecommendItemText.Text = desItem;    //recommends item based off lowest price
                                         lblRecommendItem.Text = "Item: " + nameItem;
                                         lblRecommendPrice.Text = "Price: " + priceItem;
-                                        string PicPath = "C:\\Users\\AND0043\\Desktop\\testingforcode\\" + Link;  //then displays the picture and info of that recommend item
+                                        string PicPath = "Data\\" + Link;  //then displays the picture and info of that recommend item
                                         PicRecommend.Image = Image.FromFile(PicPath);
                                     }
                                 }

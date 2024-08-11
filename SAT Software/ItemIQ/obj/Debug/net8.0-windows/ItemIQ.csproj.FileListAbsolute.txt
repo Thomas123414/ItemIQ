@@ -22,3 +22,49 @@ C:\Users\AND0043\Documents\GitHub\ItemIQ\SAT Software\ItemIQ\obj\Debug\net8.0-wi
 C:\Users\AND0043\Documents\GitHub\ItemIQ\SAT Software\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.Checklist.resources
 C:\Users\AND0043\Documents\GitHub\ItemIQ\SAT Software\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.Checkout.resources
 C:\Users\AND0043\Documents\GitHub\ItemIQ\SAT Software\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.Personal.resources
+C:\Users\AND0043\Desktop\ItemIQ\bin\Debug\net8.0-windows\ItemIQ.exe
+C:\Users\AND0043\Desktop\ItemIQ\bin\Debug\net8.0-windows\ItemIQ.deps.json
+C:\Users\AND0043\Desktop\ItemIQ\bin\Debug\net8.0-windows\ItemIQ.runtimeconfig.json
+C:\Users\AND0043\Desktop\ItemIQ\bin\Debug\net8.0-windows\ItemIQ.dll
+C:\Users\AND0043\Desktop\ItemIQ\bin\Debug\net8.0-windows\ItemIQ.pdb
+C:\Users\AND0043\Desktop\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.addingproducts.resources
+C:\Users\AND0043\Desktop\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.Checklist.resources
+C:\Users\AND0043\Desktop\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.Checkout.resources
+C:\Users\AND0043\Desktop\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.Form1.resources
+C:\Users\AND0043\Desktop\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.MainPage.resources
+C:\Users\AND0043\Desktop\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.Personal.resources
+C:\Users\AND0043\Desktop\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.Properties.Resources.resources
+C:\Users\AND0043\Desktop\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.SignUp.resources
+C:\Users\AND0043\Desktop\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.csproj.GenerateResource.cache
+C:\Users\AND0043\Desktop\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AND0043\Desktop\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.AssemblyInfoInputs.cache
+C:\Users\AND0043\Desktop\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.AssemblyInfo.cs
+C:\Users\AND0043\Desktop\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.csproj.CoreCompileInputs.cache
+C:\Users\AND0043\Desktop\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.dll
+C:\Users\AND0043\Desktop\ItemIQ\obj\Debug\net8.0-windows\refint\ItemIQ.dll
+C:\Users\AND0043\Desktop\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.pdb
+C:\Users\AND0043\Desktop\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.genruntimeconfig.cache
+C:\Users\AND0043\Desktop\ItemIQ\obj\Debug\net8.0-windows\ref\ItemIQ.dll
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\bin\Debug\net8.0-windows\ItemIQ.exe
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\bin\Debug\net8.0-windows\ItemIQ.deps.json
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\bin\Debug\net8.0-windows\ItemIQ.runtimeconfig.json
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\bin\Debug\net8.0-windows\ItemIQ.dll
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\bin\Debug\net8.0-windows\ItemIQ.pdb
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.addingproducts.resources
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.Checklist.resources
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.Checkout.resources
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.Form1.resources
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.MainPage.resources
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.Personal.resources
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.Properties.Resources.resources
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.SignUp.resources
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.csproj.GenerateResource.cache
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.AssemblyInfoInputs.cache
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.AssemblyInfo.cs
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.csproj.CoreCompileInputs.cache
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.dll
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\obj\Debug\net8.0-windows\refint\ItemIQ.dll
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.pdb
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\obj\Debug\net8.0-windows\ItemIQ.genruntimeconfig.cache
+C:\Users\AND0043\Desktop\SAT SOFTWARE DEVELOPMENT 6&7\ItemIQ\obj\Debug\net8.0-windows\ref\ItemIQ.dll

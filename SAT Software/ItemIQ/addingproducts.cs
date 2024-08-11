@@ -33,7 +33,7 @@ namespace ItemIQ
             string name = txtname.Text;
             string des = txtdes.Text;
             string price = txtprice.Text;
-            string filePath = "C:\\Users\\AND0043\\Desktop\\testingforcode\\Productdetails.xml";
+            string filePath = "Data\\Productdetails.xml";
 
             if (!File.Exists(filePath))
             {
