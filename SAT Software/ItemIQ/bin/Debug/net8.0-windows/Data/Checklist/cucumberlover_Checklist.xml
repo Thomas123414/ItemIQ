@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Checklist>
+  <Item>
+    <ItemName>yes</ItemName>
+    <ItemPrice>23</ItemPrice>
+  </Item>
+  <Item>
+    <ItemName>asjdasudsau</ItemName>
+    <ItemPrice>12212</ItemPrice>
+  </Item>
+  <Item>
+    <ItemName>sadasd</ItemName>
+    <ItemPrice>123213</ItemPrice>
+  </Item>
+</Checklist>

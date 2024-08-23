@@ -10,7 +10,13 @@
     <Compile Update="Checkout.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="CreateReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ItemInfo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MainPage.cs">

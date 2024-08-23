@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Checklist>
+  <Item>
+    <ItemName>Fanta</ItemName>
+    <ItemPrice>4</ItemPrice>
+  </Item>
+  <Item>
+    <ItemName>Bread</ItemName>
+    <ItemPrice>5</ItemPrice>
+  </Item>
+  <Item>
+    <ItemName>kjj</ItemName>
+    <ItemPrice>9</ItemPrice>
+  </Item>
+</Checklist>

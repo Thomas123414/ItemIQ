@@ -42,6 +42,7 @@
             // 
             // txtUsername
             // 
+            txtUsername.BackColor = Color.Cyan;
             txtUsername.Location = new Point(98, 83);
             txtUsername.Name = "txtUsername";
             txtUsername.PlaceholderText = "Username";
@@ -51,6 +52,7 @@
             // 
             // txtPassword
             // 
+            txtPassword.BackColor = Color.Cyan;
             txtPassword.Location = new Point(98, 139);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
@@ -60,6 +62,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = Color.Cyan;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(46, 70);
             pictureBox1.Name = "pictureBox1";
@@ -70,6 +73,7 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.BackColor = Color.Cyan;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(46, 124);
             pictureBox2.Name = "pictureBox2";
@@ -81,17 +85,18 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Bernard MT Condensed", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.BackColor = Color.Cyan;
+            label1.Font = new Font("Impact", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Location = new Point(98, 20);
             label1.Name = "label1";
-            label1.Size = new Size(207, 28);
+            label1.Size = new Size(198, 29);
             label1.TabIndex = 4;
             label1.Text = "Welcome to ItemIQ";
             // 
             // btnLogin
             // 
-            btnLogin.BackColor = Color.DarkSlateBlue;
-            btnLogin.Font = new Font("Bernard MT Condensed", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogin.BackColor = Color.Cyan;
+            btnLogin.Font = new Font("Impact", 14.25F);
             btnLogin.Location = new Point(116, 188);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(168, 43);
@@ -102,8 +107,8 @@
             // 
             // btnSignUp
             // 
-            btnSignUp.BackColor = Color.DarkSlateBlue;
-            btnSignUp.Font = new Font("Bernard MT Condensed", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSignUp.BackColor = Color.Cyan;
+            btnSignUp.Font = new Font("Impact", 14.25F);
             btnSignUp.Location = new Point(33, 237);
             btnSignUp.Name = "btnSignUp";
             btnSignUp.Size = new Size(330, 43);
@@ -116,7 +121,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.DarkSlateBlue;
+            BackColor = Color.Cyan;
             ClientSize = new Size(394, 286);
             Controls.Add(btnSignUp);
             Controls.Add(btnLogin);

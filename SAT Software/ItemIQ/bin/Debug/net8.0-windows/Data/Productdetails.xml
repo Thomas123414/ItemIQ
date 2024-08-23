@@ -6,6 +6,7 @@
     <nameItem>Cucumber</nameItem>
     <desItem>The Lebanese cucumber is green skinned, white fleshed and only 15 cm long. It has a juicy texture and a tender skin that does not need to be peeled.</desItem>
     <priceItem>1.78</priceItem>
+	<Ingredients>water: 137g, calories: 17, protein: 0.8g, fat: 0.2g, carbohydrate: 3.1g, including 2.0g of sugar, fiber: 1.0g, calcium: 19.9g, iron: 0.3mg, magnesium: 17mg, phosphorus: 29.8mg, potassium: 193mg, sodium: 2.8mg, vitaminC: 4.5mg, folate: 19.9mcg, betacarotene: 44mcg</Ingredients>
   </Detail>
   <Detail>
     <ID>2</ID>
@@ -13,6 +14,7 @@
     <nameItem>Pumpkin</nameItem>
     <desItem>Butternut pumpkin, or butternut squash, has hard golden-brown skin with bright orange flesh on the inside. This pumpkin is versatile and delicious with a sweet, nutty taste. A perfect allrounder, you can roast, mash, fry, bake and even air-fry it.</desItem>
     <priceItem>6.0</priceItem>
+	<Ingredients>Water</Ingredients>
   </Detail>
   <Detail>
     <ID>3</ID>
@@ -20,6 +22,7 @@
     <nameItem>Apple</nameItem>
     <desItem>Beautifully balanced, mild mellow sweetness add a Royal Gala to your salads, sauces, pies.</desItem>
     <priceItem>0.78</priceItem>
+	<Ingredients>Water</Ingredients>
   </Detail>
   <Detail>
     <ID>4</ID>
@@ -27,6 +30,7 @@
     <nameItem>Taco Shells</nameItem>
     <desItem>Crunchy corn taco shells</desItem>
     <priceItem>5.5</priceItem>
+	<Ingredients>Water</Ingredients>
   </Detail>
   <Detail>
     <ID>5</ID>
@@ -34,6 +38,7 @@
     <nameItem>WinterVegs</nameItem>
     <desItem>Snap frozen to lock in the goodness. Source of fibre for healthy digestion, Source of Vitamin C for a healthy immune system.</desItem>
     <priceItem>5</priceItem>
+	<Ingredients>Water</Ingredients>
   </Detail>
   <Detail>
     <ID>6</ID>
@@ -41,5 +46,6 @@
     <nameItem>Rice Bubbles</nameItem>
     <desItem>With delicious puffed grains of rice, Kellogg's Rice Bubbles with milk make the perfect breakfast cereal to start your day.</desItem>
     <priceItem>10</priceItem>
+	<Ingredients>Water</Ingredients>
   </Detail>
 </Products>

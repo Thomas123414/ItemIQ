@@ -104,7 +104,7 @@ namespace ItemIQ
                                     Itemprice = reader.ReadString();
                                     CLB.Items.Add(Itemname + ", " + Itemprice);         //adds the data you got from the textboxs to the checklist box which shows all the data
                                     TotalPrice = TotalPrice + float.Parse(Itemprice);
-                                    lblChecklistPrice.Text = $"Total price of list: {TotalPrice}";
+                                    lblChecklistPrice.Text = $"Total price of list: ${TotalPrice}";
                                     break;
                             }
 

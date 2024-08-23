@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Cart>
+  <Product>
+    <ItemName>Apple</ItemName>
+    <ItemPrice>0.78</ItemPrice>
+    <NumberItem>8</NumberItem>
+  </Product>
+</Cart>

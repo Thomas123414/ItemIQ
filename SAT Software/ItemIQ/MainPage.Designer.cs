@@ -47,23 +47,18 @@
             btnItem1 = new Button();
             flowLayoutPanel3 = new FlowLayoutPanel();
             PicItem2 = new PictureBox();
-            lblItem2 = new Label();
             btnItem2 = new Button();
             flowLayoutPanel4 = new FlowLayoutPanel();
             PicItem3 = new PictureBox();
-            lblItem3 = new Label();
             btnItem3 = new Button();
             flowLayoutPanel5 = new FlowLayoutPanel();
             PicItem4 = new PictureBox();
-            lblItem4 = new Label();
             btnItem4 = new Button();
             flowLayoutPanel6 = new FlowLayoutPanel();
             PicItem5 = new PictureBox();
-            lblItem5 = new Label();
             btnItem5 = new Button();
             flowLayoutPanel7 = new FlowLayoutPanel();
             PicItem6 = new PictureBox();
-            lblItem6 = new Label();
             btnItem6 = new Button();
             flowLayoutPanel8 = new FlowLayoutPanel();
             flowLayoutPanel9 = new FlowLayoutPanel();
@@ -74,6 +69,24 @@
             lblRecommendItemText = new Label();
             lblRecommendItem = new Label();
             lblRecommendPrice = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            ItemAmount1 = new TextBox();
+            label5 = new Label();
+            label6 = new Label();
+            ItemAmount2 = new TextBox();
+            label7 = new Label();
+            label8 = new Label();
+            ItemAmount3 = new TextBox();
+            label9 = new Label();
+            label10 = new Label();
+            ItemAmount4 = new TextBox();
+            label11 = new Label();
+            label12 = new Label();
+            ItemAmount5 = new TextBox();
+            label13 = new Label();
+            label14 = new Label();
+            ItemAmount6 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)PicRecommend).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
@@ -93,10 +106,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Bernard MT Condensed", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Impact", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Location = new Point(12, 386);
             label1.Name = "label1";
-            label1.Size = new Size(415, 57);
+            label1.Size = new Size(429, 60);
             label1.TabIndex = 1;
             label1.Text = "Grocery Store Items:";
             // 
@@ -112,17 +125,17 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Bernard MT Condensed", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Impact", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.Location = new Point(12, 69);
             label2.Name = "label2";
-            label2.Size = new Size(361, 57);
+            label2.Size = new Size(373, 60);
             label2.TabIndex = 3;
             label2.Text = "Recommend Item";
             // 
             // btnHome
             // 
-            btnHome.BackColor = Color.DarkSlateBlue;
-            btnHome.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold);
+            btnHome.BackColor = Color.Cyan;
+            btnHome.Font = new Font("Impact", 9.75F);
             btnHome.Image = (Image)resources.GetObject("btnHome.Image");
             btnHome.ImageAlign = ContentAlignment.MiddleRight;
             btnHome.Location = new Point(1, 1);
@@ -135,8 +148,8 @@
             // 
             // btnCheckout
             // 
-            btnCheckout.BackColor = Color.DarkSlateBlue;
-            btnCheckout.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold);
+            btnCheckout.BackColor = Color.Cyan;
+            btnCheckout.Font = new Font("Impact", 9.75F);
             btnCheckout.Image = (Image)resources.GetObject("btnCheckout.Image");
             btnCheckout.ImageAlign = ContentAlignment.MiddleRight;
             btnCheckout.Location = new Point(196, 1);
@@ -149,8 +162,8 @@
             // 
             // btnChecklist
             // 
-            btnChecklist.BackColor = Color.DarkSlateBlue;
-            btnChecklist.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold);
+            btnChecklist.BackColor = Color.Cyan;
+            btnChecklist.Font = new Font("Impact", 9.75F);
             btnChecklist.Image = (Image)resources.GetObject("btnChecklist.Image");
             btnChecklist.ImageAlign = ContentAlignment.MiddleRight;
             btnChecklist.Location = new Point(394, 1);
@@ -163,7 +176,7 @@
             // 
             // btnProfile
             // 
-            btnProfile.BackColor = Color.DarkSlateBlue;
+            btnProfile.BackColor = Color.Cyan;
             btnProfile.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold);
             btnProfile.Image = (Image)resources.GetObject("btnProfile.Image");
             btnProfile.Location = new Point(603, 1);
@@ -175,7 +188,7 @@
             // 
             // btnLogOut
             // 
-            btnLogOut.BackColor = Color.DarkSlateBlue;
+            btnLogOut.BackColor = Color.Cyan;
             btnLogOut.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold);
             btnLogOut.Image = (Image)resources.GetObject("btnLogOut.Image");
             btnLogOut.Location = new Point(811, 1);
@@ -197,8 +210,8 @@
             // 
             // btnNextItem
             // 
-            btnNextItem.BackColor = Color.DarkSlateBlue;
-            btnNextItem.Font = new Font("Bernard MT Condensed", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnNextItem.BackColor = Color.Cyan;
+            btnNextItem.Font = new Font("Impact", 20.25F);
             btnNextItem.Image = (Image)resources.GetObject("btnNextItem.Image");
             btnNextItem.ImageAlign = ContentAlignment.MiddleRight;
             btnNextItem.Location = new Point(741, 148);
@@ -211,8 +224,8 @@
             // 
             // btnAddtocart
             // 
-            btnAddtocart.BackColor = Color.DarkSlateBlue;
-            btnAddtocart.Font = new Font("Bernard MT Condensed", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAddtocart.BackColor = Color.Cyan;
+            btnAddtocart.Font = new Font("Impact", 20.25F);
             btnAddtocart.Image = (Image)resources.GetObject("btnAddtocart.Image");
             btnAddtocart.ImageAlign = ContentAlignment.MiddleRight;
             btnAddtocart.Location = new Point(741, 244);
@@ -249,8 +262,9 @@
             flowLayoutPanel2.Anchor = AnchorStyles.Top;
             flowLayoutPanel2.Controls.Add(PicItem1);
             flowLayoutPanel2.Controls.Add(lblItem1);
+            flowLayoutPanel2.Controls.Add(label4);
+            flowLayoutPanel2.Controls.Add(ItemAmount1);
             flowLayoutPanel2.Controls.Add(btnItem1);
-            flowLayoutPanel2.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel2.Location = new Point(3, 3);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
             flowLayoutPanel2.Size = new Size(320, 295);
@@ -266,23 +280,26 @@
             PicItem1.SizeMode = PictureBoxSizeMode.StretchImage;
             PicItem1.TabIndex = 0;
             PicItem1.TabStop = false;
+            PicItem1.Click += PicItem1_Click;
             // 
             // lblItem1
             // 
             lblItem1.AutoSize = true;
-            lblItem1.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblItem1.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblItem1.Location = new Point(3, 198);
-            lblItem1.MaximumSize = new Size(315, 0);
+            lblItem1.MaximumSize = new Size(160, 63);
+            lblItem1.MinimumSize = new Size(160, 0);
             lblItem1.Name = "lblItem1";
-            lblItem1.Size = new Size(308, 64);
+            lblItem1.Size = new Size(160, 32);
             lblItem1.TabIndex = 14;
-            lblItem1.Text = "The Lebanese cucumber is green skinned, white fleshed and only 15 cm long. It has a juicy texture and a tender skin that does not need to be peeled. Price: 1.78 / 1ea";
+            lblItem1.Text = "Name: Cucumber, Price: $1.78";
             // 
             // btnItem1
             // 
-            btnItem1.BackColor = Color.DarkSlateBlue;
+            btnItem1.BackColor = Color.Cyan;
+            btnItem1.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnItem1.ForeColor = SystemColors.ActiveCaptionText;
-            btnItem1.Location = new Point(3, 265);
+            btnItem1.Location = new Point(3, 261);
             btnItem1.Name = "btnItem1";
             btnItem1.Size = new Size(308, 27);
             btnItem1.TabIndex = 0;
@@ -293,10 +310,11 @@
             // flowLayoutPanel3
             // 
             flowLayoutPanel3.Controls.Add(PicItem2);
-            flowLayoutPanel3.Controls.Add(lblItem2);
+            flowLayoutPanel3.Controls.Add(label5);
+            flowLayoutPanel3.Controls.Add(label6);
+            flowLayoutPanel3.Controls.Add(ItemAmount2);
             flowLayoutPanel3.Controls.Add(btnItem2);
             flowLayoutPanel3.Dock = DockStyle.Bottom;
-            flowLayoutPanel3.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel3.Location = new Point(329, 3);
             flowLayoutPanel3.Name = "flowLayoutPanel3";
             flowLayoutPanel3.Size = new Size(320, 295);
@@ -308,27 +326,18 @@
             PicItem2.Image = (Image)resources.GetObject("PicItem2.Image");
             PicItem2.Location = new Point(3, 3);
             PicItem2.Name = "PicItem2";
-            PicItem2.Size = new Size(317, 158);
+            PicItem2.Size = new Size(317, 210);
             PicItem2.SizeMode = PictureBoxSizeMode.StretchImage;
             PicItem2.TabIndex = 15;
             PicItem2.TabStop = false;
-            // 
-            // lblItem2
-            // 
-            lblItem2.AutoSize = true;
-            lblItem2.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblItem2.Location = new Point(3, 164);
-            lblItem2.MaximumSize = new Size(315, 0);
-            lblItem2.Name = "lblItem2";
-            lblItem2.Size = new Size(314, 96);
-            lblItem2.TabIndex = 17;
-            lblItem2.Text = resources.GetString("lblItem2.Text");
+            PicItem2.Click += PicItem2_Click;
             // 
             // btnItem2
             // 
-            btnItem2.BackColor = Color.DarkSlateBlue;
+            btnItem2.BackColor = Color.Cyan;
+            btnItem2.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnItem2.ForeColor = SystemColors.ActiveCaptionText;
-            btnItem2.Location = new Point(3, 263);
+            btnItem2.Location = new Point(3, 264);
             btnItem2.Name = "btnItem2";
             btnItem2.Size = new Size(314, 27);
             btnItem2.TabIndex = 16;
@@ -339,10 +348,11 @@
             // flowLayoutPanel4
             // 
             flowLayoutPanel4.Controls.Add(PicItem3);
-            flowLayoutPanel4.Controls.Add(lblItem3);
+            flowLayoutPanel4.Controls.Add(label7);
+            flowLayoutPanel4.Controls.Add(label8);
+            flowLayoutPanel4.Controls.Add(ItemAmount3);
             flowLayoutPanel4.Controls.Add(btnItem3);
             flowLayoutPanel4.Dock = DockStyle.Bottom;
-            flowLayoutPanel4.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel4.Location = new Point(655, 3);
             flowLayoutPanel4.Name = "flowLayoutPanel4";
             flowLayoutPanel4.Size = new Size(320, 295);
@@ -354,27 +364,18 @@
             PicItem3.Image = (Image)resources.GetObject("PicItem3.Image");
             PicItem3.Location = new Point(3, 3);
             PicItem3.Name = "PicItem3";
-            PicItem3.Size = new Size(317, 206);
+            PicItem3.Size = new Size(317, 210);
             PicItem3.SizeMode = PictureBoxSizeMode.StretchImage;
             PicItem3.TabIndex = 15;
             PicItem3.TabStop = false;
-            // 
-            // lblItem3
-            // 
-            lblItem3.AutoSize = true;
-            lblItem3.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblItem3.Location = new Point(3, 212);
-            lblItem3.MaximumSize = new Size(315, 0);
-            lblItem3.Name = "lblItem3";
-            lblItem3.Size = new Size(312, 48);
-            lblItem3.TabIndex = 17;
-            lblItem3.Text = "Beautifully balanced, mild & mellow sweetness — add a Royal Gala to your salads, sauces & pies. $0.78 / 1EA";
+            PicItem3.Click += PicItem3_Click;
             // 
             // btnItem3
             // 
-            btnItem3.BackColor = Color.DarkSlateBlue;
+            btnItem3.BackColor = Color.Cyan;
+            btnItem3.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnItem3.ForeColor = SystemColors.ActiveCaptionText;
-            btnItem3.Location = new Point(3, 263);
+            btnItem3.Location = new Point(3, 264);
             btnItem3.Name = "btnItem3";
             btnItem3.Size = new Size(308, 27);
             btnItem3.TabIndex = 16;
@@ -385,10 +386,11 @@
             // flowLayoutPanel5
             // 
             flowLayoutPanel5.Controls.Add(PicItem4);
-            flowLayoutPanel5.Controls.Add(lblItem4);
+            flowLayoutPanel5.Controls.Add(label9);
+            flowLayoutPanel5.Controls.Add(label10);
+            flowLayoutPanel5.Controls.Add(ItemAmount4);
             flowLayoutPanel5.Controls.Add(btnItem4);
             flowLayoutPanel5.Dock = DockStyle.Bottom;
-            flowLayoutPanel5.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel5.Location = new Point(3, 304);
             flowLayoutPanel5.Name = "flowLayoutPanel5";
             flowLayoutPanel5.Size = new Size(320, 295);
@@ -404,23 +406,14 @@
             PicItem4.SizeMode = PictureBoxSizeMode.StretchImage;
             PicItem4.TabIndex = 15;
             PicItem4.TabStop = false;
-            // 
-            // lblItem4
-            // 
-            lblItem4.AutoSize = true;
-            lblItem4.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblItem4.Location = new Point(3, 198);
-            lblItem4.MaximumSize = new Size(315, 0);
-            lblItem4.Name = "lblItem4";
-            lblItem4.Size = new Size(262, 16);
-            lblItem4.TabIndex = 17;
-            lblItem4.Text = "Crunchy corn taco shells, Price: $3.44/100g";
+            PicItem4.Click += PicItem4_Click;
             // 
             // btnItem4
             // 
-            btnItem4.BackColor = Color.DarkSlateBlue;
+            btnItem4.BackColor = Color.Cyan;
+            btnItem4.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnItem4.ForeColor = SystemColors.ActiveCaptionText;
-            btnItem4.Location = new Point(3, 217);
+            btnItem4.Location = new Point(3, 261);
             btnItem4.Name = "btnItem4";
             btnItem4.Size = new Size(308, 27);
             btnItem4.TabIndex = 16;
@@ -431,10 +424,11 @@
             // flowLayoutPanel6
             // 
             flowLayoutPanel6.Controls.Add(PicItem5);
-            flowLayoutPanel6.Controls.Add(lblItem5);
+            flowLayoutPanel6.Controls.Add(label11);
+            flowLayoutPanel6.Controls.Add(label12);
+            flowLayoutPanel6.Controls.Add(ItemAmount5);
             flowLayoutPanel6.Controls.Add(btnItem5);
             flowLayoutPanel6.Dock = DockStyle.Bottom;
-            flowLayoutPanel6.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel6.Location = new Point(329, 304);
             flowLayoutPanel6.Name = "flowLayoutPanel6";
             flowLayoutPanel6.Size = new Size(320, 295);
@@ -446,27 +440,18 @@
             PicItem5.Image = (Image)resources.GetObject("PicItem5.Image");
             PicItem5.Location = new Point(3, 3);
             PicItem5.Name = "PicItem5";
-            PicItem5.Size = new Size(317, 192);
+            PicItem5.Size = new Size(317, 209);
             PicItem5.SizeMode = PictureBoxSizeMode.StretchImage;
             PicItem5.TabIndex = 15;
             PicItem5.TabStop = false;
-            // 
-            // lblItem5
-            // 
-            lblItem5.AutoSize = true;
-            lblItem5.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblItem5.Location = new Point(3, 198);
-            lblItem5.MaximumSize = new Size(315, 0);
-            lblItem5.Name = "lblItem5";
-            lblItem5.Size = new Size(312, 48);
-            lblItem5.TabIndex = 17;
-            lblItem5.Text = "Snap frozen to lock in the goodness. Source of fibre for healthy digestion, Source of Vitamin C for a healthy immune system. Price: 5/kg\r\n";
+            PicItem5.Click += PicItem5_Click;
             // 
             // btnItem5
             // 
-            btnItem5.BackColor = Color.DarkSlateBlue;
+            btnItem5.BackColor = Color.Cyan;
+            btnItem5.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnItem5.ForeColor = SystemColors.ActiveCaptionText;
-            btnItem5.Location = new Point(3, 249);
+            btnItem5.Location = new Point(3, 263);
             btnItem5.Name = "btnItem5";
             btnItem5.Size = new Size(308, 27);
             btnItem5.TabIndex = 16;
@@ -477,10 +462,11 @@
             // flowLayoutPanel7
             // 
             flowLayoutPanel7.Controls.Add(PicItem6);
-            flowLayoutPanel7.Controls.Add(lblItem6);
+            flowLayoutPanel7.Controls.Add(label13);
+            flowLayoutPanel7.Controls.Add(label14);
+            flowLayoutPanel7.Controls.Add(ItemAmount6);
             flowLayoutPanel7.Controls.Add(btnItem6);
             flowLayoutPanel7.Dock = DockStyle.Bottom;
-            flowLayoutPanel7.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel7.Location = new Point(655, 304);
             flowLayoutPanel7.Name = "flowLayoutPanel7";
             flowLayoutPanel7.Size = new Size(320, 295);
@@ -496,23 +482,14 @@
             PicItem6.SizeMode = PictureBoxSizeMode.StretchImage;
             PicItem6.TabIndex = 15;
             PicItem6.TabStop = false;
-            // 
-            // lblItem6
-            // 
-            lblItem6.AutoSize = true;
-            lblItem6.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblItem6.Location = new Point(3, 198);
-            lblItem6.MaximumSize = new Size(315, 0);
-            lblItem6.Name = "lblItem6";
-            lblItem6.Size = new Size(305, 48);
-            lblItem6.TabIndex = 17;
-            lblItem6.Text = "With delicious puffed grains of rice, Kellogg's Rice Bubbles with milk make the perfect breakfast cereal to start your day. Price:  10";
+            PicItem6.Click += PicItem6_Click;
             // 
             // btnItem6
             // 
-            btnItem6.BackColor = Color.DarkSlateBlue;
+            btnItem6.BackColor = Color.Cyan;
+            btnItem6.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnItem6.ForeColor = SystemColors.ActiveCaptionText;
-            btnItem6.Location = new Point(3, 249);
+            btnItem6.Location = new Point(3, 261);
             btnItem6.Name = "btnItem6";
             btnItem6.Size = new Size(308, 27);
             btnItem6.TabIndex = 16;
@@ -577,7 +554,7 @@
             // lblRecommendItemText
             // 
             lblRecommendItemText.AutoSize = true;
-            lblRecommendItemText.Font = new Font("Bernard MT Condensed", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblRecommendItemText.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold);
             lblRecommendItemText.Location = new Point(433, 129);
             lblRecommendItemText.MaximumSize = new Size(300, 193);
             lblRecommendItemText.MinimumSize = new Size(300, 193);
@@ -589,33 +566,206 @@
             // lblRecommendItem
             // 
             lblRecommendItem.AutoSize = true;
-            lblRecommendItem.Font = new Font("Bernard MT Condensed", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblRecommendItem.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold);
             lblRecommendItem.Location = new Point(433, 326);
             lblRecommendItem.MaximumSize = new Size(300, 0);
             lblRecommendItem.MinimumSize = new Size(300, 0);
             lblRecommendItem.Name = "lblRecommendItem";
-            lblRecommendItem.Size = new Size(300, 22);
+            lblRecommendItem.Size = new Size(300, 23);
             lblRecommendItem.TabIndex = 14;
             lblRecommendItem.Text = "Item:";
             // 
             // lblRecommendPrice
             // 
             lblRecommendPrice.AutoSize = true;
-            lblRecommendPrice.Font = new Font("Bernard MT Condensed", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblRecommendPrice.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold);
             lblRecommendPrice.Location = new Point(433, 358);
             lblRecommendPrice.MaximumSize = new Size(300, 0);
             lblRecommendPrice.MinimumSize = new Size(300, 0);
             lblRecommendPrice.Name = "lblRecommendPrice";
-            lblRecommendPrice.Size = new Size(300, 22);
+            lblRecommendPrice.Size = new Size(300, 23);
             lblRecommendPrice.TabIndex = 15;
             lblRecommendPrice.Text = "Price:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Impact", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(466, 414);
+            label3.Name = "label3";
+            label3.Size = new Size(211, 19);
+            label3.TabIndex = 16;
+            label3.Text = "(Click Item Image for more info!)";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Impact", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(169, 198);
+            label4.Name = "label4";
+            label4.Size = new Size(53, 17);
+            label4.TabIndex = 15;
+            label4.Text = "Amount:";
+            // 
+            // ItemAmount1
+            // 
+            ItemAmount1.Location = new Point(3, 233);
+            ItemAmount1.Name = "ItemAmount1";
+            ItemAmount1.Size = new Size(308, 22);
+            ItemAmount1.TabIndex = 16;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(3, 216);
+            label5.MaximumSize = new Size(160, 63);
+            label5.MinimumSize = new Size(160, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(160, 16);
+            label5.TabIndex = 17;
+            label5.Text = "Name: Pumpkin, Price: $6.0";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Impact", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(169, 216);
+            label6.Name = "label6";
+            label6.Size = new Size(53, 17);
+            label6.TabIndex = 18;
+            label6.Text = "Amount:";
+            // 
+            // ItemAmount2
+            // 
+            ItemAmount2.Location = new Point(3, 236);
+            ItemAmount2.Name = "ItemAmount2";
+            ItemAmount2.Size = new Size(308, 22);
+            ItemAmount2.TabIndex = 19;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(3, 216);
+            label7.MaximumSize = new Size(160, 63);
+            label7.MinimumSize = new Size(160, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(160, 16);
+            label7.TabIndex = 17;
+            label7.Text = "Name: Apple, Price: $0.78";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Impact", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.Location = new Point(169, 216);
+            label8.Name = "label8";
+            label8.Size = new Size(53, 17);
+            label8.TabIndex = 18;
+            label8.Text = "Amount:";
+            // 
+            // ItemAmount3
+            // 
+            ItemAmount3.Location = new Point(3, 236);
+            ItemAmount3.Name = "ItemAmount3";
+            ItemAmount3.Size = new Size(308, 22);
+            ItemAmount3.TabIndex = 19;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(3, 198);
+            label9.MaximumSize = new Size(160, 63);
+            label9.MinimumSize = new Size(160, 0);
+            label9.Name = "label9";
+            label9.Size = new Size(160, 32);
+            label9.TabIndex = 17;
+            label9.Text = "Name: TacoShells, Price: $5.5";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Impact", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label10.Location = new Point(169, 198);
+            label10.Name = "label10";
+            label10.Size = new Size(53, 17);
+            label10.TabIndex = 18;
+            label10.Text = "Amount:";
+            // 
+            // ItemAmount4
+            // 
+            ItemAmount4.Location = new Point(3, 233);
+            ItemAmount4.Name = "ItemAmount4";
+            ItemAmount4.Size = new Size(308, 22);
+            ItemAmount4.TabIndex = 19;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.Location = new Point(3, 215);
+            label11.MaximumSize = new Size(160, 63);
+            label11.MinimumSize = new Size(160, 0);
+            label11.Name = "label11";
+            label11.Size = new Size(160, 16);
+            label11.TabIndex = 17;
+            label11.Text = "Name: WinterVegs, Price: $5";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Impact", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label12.Location = new Point(169, 215);
+            label12.Name = "label12";
+            label12.Size = new Size(53, 17);
+            label12.TabIndex = 18;
+            label12.Text = "Amount:";
+            // 
+            // ItemAmount5
+            // 
+            ItemAmount5.Location = new Point(3, 235);
+            ItemAmount5.Name = "ItemAmount5";
+            ItemAmount5.Size = new Size(308, 22);
+            ItemAmount5.TabIndex = 19;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label13.Location = new Point(3, 198);
+            label13.MaximumSize = new Size(160, 63);
+            label13.MinimumSize = new Size(160, 0);
+            label13.Name = "label13";
+            label13.Size = new Size(160, 32);
+            label13.TabIndex = 17;
+            label13.Text = "Name: RiceBubbles, Price: $10.0";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Impact", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label14.Location = new Point(169, 198);
+            label14.Name = "label14";
+            label14.Size = new Size(53, 17);
+            label14.TabIndex = 18;
+            label14.Text = "Amount:";
+            // 
+            // ItemAmount6
+            // 
+            ItemAmount6.Location = new Point(3, 233);
+            ItemAmount6.Name = "ItemAmount6";
+            ItemAmount6.Size = new Size(308, 22);
+            ItemAmount6.TabIndex = 19;
             // 
             // MainPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.DarkSlateBlue;
+            BackColor = Color.Cyan;
             ClientSize = new Size(1013, 749);
+            Controls.Add(label3);
             Controls.Add(lblRecommendPrice);
             Controls.Add(lblRecommendItem);
             Controls.Add(flowLayoutPanel1);
@@ -683,10 +833,8 @@
         private Label lblItem1;
         private Button btnItem1;
         private PictureBox PicItem2;
-        private Label lblItem2;
         private Button btnItem2;
         private PictureBox PicItem3;
-        private Label lblItem3;
         private Button btnItem3;
         private FlowLayoutPanel flowLayoutPanel8;
         private FlowLayoutPanel flowLayoutPanel9;
@@ -697,13 +845,28 @@
         private Label lblRecommendItem;
         private Label lblRecommendPrice;
         private PictureBox PicItem4;
-        private Label lblItem4;
         private Button btnItem4;
         private PictureBox PicItem5;
-        private Label lblItem5;
         private Button btnItem5;
         private PictureBox PicItem6;
-        private Label lblItem6;
         private Button btnItem6;
+        private Label label3;
+        private Label label4;
+        private TextBox ItemAmount1;
+        private Label label5;
+        private Label label6;
+        private TextBox ItemAmount2;
+        private Label label7;
+        private Label label8;
+        private TextBox ItemAmount3;
+        private Label label9;
+        private Label label10;
+        private TextBox ItemAmount4;
+        private Label label11;
+        private Label label12;
+        private TextBox ItemAmount5;
+        private Label label13;
+        private Label label14;
+        private TextBox ItemAmount6;
     }
 }

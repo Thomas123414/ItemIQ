@@ -43,10 +43,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Bernard MT Condensed", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Impact", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(58, 9);
             label1.Name = "label1";
-            label1.Size = new Size(246, 28);
+            label1.Size = new Size(251, 29);
             label1.TabIndex = 5;
             label1.Text = "SignUp to ItemIQ Here!";
             // 
@@ -97,8 +97,8 @@
             // 
             // btnRegister
             // 
-            btnRegister.BackColor = Color.DarkSlateBlue;
-            btnRegister.Font = new Font("Bernard MT Condensed", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRegister.BackColor = Color.Cyan;
+            btnRegister.Font = new Font("Impact", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnRegister.Location = new Point(58, 230);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(246, 43);
@@ -111,7 +111,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.DarkSlateBlue;
+            BackColor = Color.Cyan;
             ClientSize = new Size(360, 276);
             Controls.Add(btnRegister);
             Controls.Add(pictureBox2);

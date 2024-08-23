@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Cart>
+  <Product>
+    <ItemName>Cucumber</ItemName>
+    <ItemPrice>1.78</ItemPrice>
+    <NumberItem>3</NumberItem>
+  </Product>
+  <Product>
+    <ItemName>Cucumber</ItemName>
+    <ItemPrice>1.78</ItemPrice>
+    <NumberItem>3</NumberItem>
+  </Product>
+  <Product>
+    <ItemName>Cucumber</ItemName>
+    <ItemPrice>1.78</ItemPrice>
+    <NumberItem>3</NumberItem>
+  </Product>
+  <Product>
+    <ItemName>Cucumber</ItemName>
+    <ItemPrice>1.78</ItemPrice>
+    <NumberItem>3</NumberItem>
+  </Product>
+  <Product>
+    <ItemName>Pumpkin</ItemName>
+    <ItemPrice>6.0</ItemPrice>
+    <NumberItem>1</NumberItem>
+  </Product>
+  <Product>
+    <ItemName>Apple</ItemName>
+    <ItemPrice>0.78</ItemPrice>
+    <NumberItem>8</NumberItem>
+  </Product>
+</Cart>

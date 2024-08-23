@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Cart>
+  <Product>
+    <ItemName>Taco Shells</ItemName>
+    <ItemPrice>5.5</ItemPrice>
+    <NumberItem>6</NumberItem>
+  </Product>
+</Cart>

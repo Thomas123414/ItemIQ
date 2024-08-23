@@ -46,8 +46,8 @@
             // 
             // btnLogOut
             // 
-            btnLogOut.BackColor = Color.DarkSlateBlue;
-            btnLogOut.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold);
+            btnLogOut.BackColor = Color.Cyan;
+            btnLogOut.Font = new Font("Impact", 9.75F);
             btnLogOut.Image = (Image)resources.GetObject("btnLogOut.Image");
             btnLogOut.Location = new Point(811, 1);
             btnLogOut.Name = "btnLogOut";
@@ -58,8 +58,8 @@
             // 
             // btnProfile
             // 
-            btnProfile.BackColor = Color.DarkSlateBlue;
-            btnProfile.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold);
+            btnProfile.BackColor = Color.Cyan;
+            btnProfile.Font = new Font("Impact", 9.75F);
             btnProfile.Image = (Image)resources.GetObject("btnProfile.Image");
             btnProfile.Location = new Point(603, 1);
             btnProfile.Name = "btnProfile";
@@ -70,8 +70,8 @@
             // 
             // btnChecklist
             // 
-            btnChecklist.BackColor = Color.DarkSlateBlue;
-            btnChecklist.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold);
+            btnChecklist.BackColor = Color.Cyan;
+            btnChecklist.Font = new Font("Impact", 9.75F);
             btnChecklist.Image = (Image)resources.GetObject("btnChecklist.Image");
             btnChecklist.ImageAlign = ContentAlignment.MiddleRight;
             btnChecklist.Location = new Point(394, 1);
@@ -83,8 +83,8 @@
             // 
             // btnCheckout
             // 
-            btnCheckout.BackColor = Color.DarkSlateBlue;
-            btnCheckout.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold);
+            btnCheckout.BackColor = Color.Cyan;
+            btnCheckout.Font = new Font("Impact", 9.75F);
             btnCheckout.Image = (Image)resources.GetObject("btnCheckout.Image");
             btnCheckout.ImageAlign = ContentAlignment.MiddleRight;
             btnCheckout.Location = new Point(196, 1);
@@ -97,8 +97,8 @@
             // 
             // btnHome
             // 
-            btnHome.BackColor = Color.DarkSlateBlue;
-            btnHome.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold);
+            btnHome.BackColor = Color.Cyan;
+            btnHome.Font = new Font("Impact", 9.75F);
             btnHome.Image = (Image)resources.GetObject("btnHome.Image");
             btnHome.ImageAlign = ContentAlignment.MiddleRight;
             btnHome.Location = new Point(1, 1);
@@ -111,6 +111,7 @@
             // 
             // CLB
             // 
+            CLB.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             CLB.FormattingEnabled = true;
             CLB.Items.AddRange(new object[] { "" });
             CLB.Location = new Point(12, 70);
@@ -123,30 +124,30 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Bernard MT Condensed", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Impact", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Location = new Point(754, 80);
             label1.Name = "label1";
-            label1.Size = new Size(198, 31);
+            label1.Size = new Size(198, 34);
             label1.TabIndex = 15;
             label1.Text = "Add to checklist!";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Bernard MT Condensed", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Impact", 12F);
             label2.Location = new Point(700, 140);
             label2.Name = "label2";
-            label2.Size = new Size(89, 19);
+            label2.Size = new Size(82, 20);
             label2.TabIndex = 16;
             label2.Text = "Item Name:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Bernard MT Condensed", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Impact", 12F);
             label3.Location = new Point(738, 174);
             label3.Name = "label3";
-            label3.Size = new Size(51, 19);
+            label3.Size = new Size(46, 20);
             label3.TabIndex = 17;
             label3.Text = "Price:";
             // 
@@ -166,8 +167,8 @@
             // 
             // btnChecklistAdd
             // 
-            btnChecklistAdd.BackColor = Color.DarkSlateBlue;
-            btnChecklistAdd.Font = new Font("Bernard MT Condensed", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnChecklistAdd.BackColor = Color.Cyan;
+            btnChecklistAdd.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnChecklistAdd.Location = new Point(743, 229);
             btnChecklistAdd.Name = "btnChecklistAdd";
             btnChecklistAdd.Size = new Size(209, 33);
@@ -179,10 +180,10 @@
             // lblChecklistPrice
             // 
             lblChecklistPrice.AutoSize = true;
-            lblChecklistPrice.Font = new Font("Bernard MT Condensed", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblChecklistPrice.Font = new Font("Impact", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblChecklistPrice.Location = new Point(718, 306);
             lblChecklistPrice.Name = "lblChecklistPrice";
-            lblChecklistPrice.Size = new Size(159, 22);
+            lblChecklistPrice.Size = new Size(145, 23);
             lblChecklistPrice.TabIndex = 21;
             lblChecklistPrice.Text = "Total price of list:";
             // 
@@ -190,7 +191,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.DarkSlateBlue;
+            BackColor = Color.Cyan;
             ClientSize = new Size(1014, 353);
             Controls.Add(lblChecklistPrice);
             Controls.Add(btnChecklistAdd);

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Checklist>
+  <Item>
+    <ItemName>Pumpkin</ItemName>
+    <ItemPrice>5</ItemPrice>
+  </Item>
+  <Item>
+    <ItemName>Blueberry</ItemName>
+    <ItemPrice>0.5</ItemPrice>
+  </Item>
+  <Item>
+    <ItemName>Cherry</ItemName>
+    <ItemPrice>1</ItemPrice>
+  </Item>
+  <Item>
+    <ItemName>Mango</ItemName>
+    <ItemPrice>2.5</ItemPrice>
+  </Item>
+</Checklist>

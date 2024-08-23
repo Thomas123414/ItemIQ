@@ -23,6 +23,23 @@ namespace ItemIQ
             InitializeComponent();
         }
 
+        public static string ItemInfomationName = "";
+
+        public void OpenItemInfomation(string ItemName)
+        {
+            ItemInfomationName = ItemName;
+
+            this.Hide();
+            // Create a new instance of ChecklistPage form
+            ItemInfo Iteminfo = new ItemInfo();
+
+            // Subscribe to the Closed event of form to close the current form when other form is closed
+            Iteminfo.Closed += (s, args) => this.Close();
+
+            // Display a form
+            Iteminfo.Show();
+        }
+
         public void Additemtocart(string ItemName, string ItemPrice, string NumberItem)
         {
             bool Payed = Checkout.Payedfor;
@@ -33,22 +50,6 @@ namespace ItemIQ
             string filePathSettings = $"Data\\{UserName}.xml"; //file paths 
             string CartOrderID = UserName + "_CartOrder";
             string filePath = $"Data\\CartOrders\\{CartOrderID}.xml";
-            if (File.Exists(filePath) && Payed == true)
-            {
-                var sourcePath = filePath; //file paths
-                var destinationPath = $"Data\\Pastorders\\Last_{CartOrderID}.xml";
-                if (File.Exists(destinationPath))
-                {
-                    File.Delete(destinationPath);       //deleting existing file if they exist
-                }
-                File.Move(sourcePath, destinationPath);     //moving the file to a different location
-                File.Delete(sourcePath);
-                var doc = XDocument.Load(filePathSettings);
-                var node = doc.Descendants("Personal").FirstOrDefault(Player => Player.Element("SessionID").Value == "0"); //editing a xml file so that i can lastcartid for future readin of the data
-                node.SetElementValue("LastCartOrderID", $"Last_{CartOrderID}.xml");
-                //Save the changes to the file
-                doc.Save(filePathSettings);
-            }
             if (!File.Exists(filePath))
             {
                 XmlWriterSettings xmlWriterSettings = new XmlWriterSettings
@@ -76,7 +77,7 @@ namespace ItemIQ
                 XDocument xDocument = XDocument.Load(filePath);
                 XElement root = xDocument.Element("Cart");
                 if (root != null)
-                {   
+                {
                     root.Add(new XElement("Product",                            //if the xml file already exist it just updates the file with more details of login user so that they can be read later
                         new XElement("ItemName", ItemName.Trim()),
                         new XElement("ItemPrice", ItemPrice),
@@ -127,7 +128,7 @@ namespace ItemIQ
 
         private void MainPage_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void lblRecommendItemText_Click(object sender, EventArgs e)
@@ -157,17 +158,20 @@ namespace ItemIQ
 
         private void btnItem1_Click(object sender, EventArgs e)
         {
-            Additemtocart("Cucumber", "1.78", "3"); //adds cucumber to cart which $1.78 for 3 and adds it to cart when the button btncart1 is clicked
+            string ItemAmount = ItemAmount1.Text;
+            Additemtocart("Cucumber", "1.78", ItemAmount); //adds cucumber to cart which $1.78 for 3 and adds it to cart when the button btncart1 is clicked
         }
 
         private void btnItem2_Click(object sender, EventArgs e)
         {
-            Additemtocart("Pumpkin", "6.0", "1");   //adds Pumpkin to cart which $6 for 1 and adds it to cart when the button btncart2 is clicked
+            string ItemAmount = ItemAmount2.Text;
+            Additemtocart("Pumpkin", "6.0", ItemAmount);   //adds Pumpkin to cart which $6 for 1 and adds it to cart when the button btncart2 is clicked
         }
 
         private void btnItem3_Click(object sender, EventArgs e)
         {
-            Additemtocart("Apple", "0.78", "8");    //adds Apple to cart which $0.78 for 8 and adds it to cart when the button btncart3 is clicked
+            string ItemAmount = ItemAmount3.Text;
+            Additemtocart("Apple", "0.78", ItemAmount);    //adds Apple to cart which $0.78 for 8 and adds it to cart when the button btncart3 is clicked
         }
 
         private void btnChecklist_Click_1(object sender, EventArgs e)
@@ -197,14 +201,20 @@ namespace ItemIQ
 
         private void btnHome_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            addingproducts addingproducts = new addingproducts();
-            // Create a new instance of AddingProducts form
-            // Subscribe to the Closed event of form to close the current form when other form is closed
-            addingproducts.Closed += (s, args) => this.Close();
+            string UserName = Form1.Username;
+            string PassWord = Form1.Password;
 
-            // Display a form
-            addingproducts.Show();
+            if (UserName == "3" && PassWord == "3")
+            {
+                this.Hide();
+                addingproducts addingproducts = new addingproducts();
+                // Create a new instance of AddingProducts form
+                // Subscribe to the Closed event of form to close the current form when other form is closed
+                addingproducts.Closed += (s, args) => this.Close();
+
+                // Display a form
+                addingproducts.Show();
+            }
         }
 
         private void btnProfile_Click_1(object sender, EventArgs e)
@@ -245,17 +255,20 @@ namespace ItemIQ
 
         private void btnItem4_Click(object sender, EventArgs e)
         {
-            Additemtocart("Taco Shells", "5.5", "6");   //adds taco shells to cart which $5.5 for 6 and adds it to cart when the button btncart4 is clicked
+            string ItemAmount = ItemAmount4.Text;
+            Additemtocart("Taco Shells", "5.5", ItemAmount);   //adds taco shells to cart which $5.5 for 6 and adds it to cart when the button btncart4 is clicked
         }
 
         private void btnItem5_Click(object sender, EventArgs e)
         {
-            Additemtocart("WinterVegs", "5", "4");      //adds wintervegs to cart which $5 for 4 and adds it to cart when the button btncart5 is clicked
+            string ItemAmount = ItemAmount5.Text;
+            Additemtocart("WinterVegs", "5", ItemAmount);      //adds wintervegs to cart which $5 for 4 and adds it to cart when the button btncart5 is clicked
         }
 
         private void btnItem6_Click(object sender, EventArgs e)
         {
-            Additemtocart("Rice Bubbles", "10", "3");   //adds rice bubbles to cart which $10 for 3 and adds it to cart when the button btncart6 is clicked
+            string ItemAmount = ItemAmount6.Text;
+            Additemtocart("Rice Bubbles", "10", ItemAmount);   //adds rice bubbles to cart which $10 for 3 and adds it to cart when the button btncart6 is clicked
         }
 
         private void MainPage_Load_1(object sender, EventArgs e)
@@ -297,7 +310,7 @@ namespace ItemIQ
                                         Price = parsedPrice;
                                         lblRecommendItemText.Text = desItem;    //recommends item based off lowest price
                                         lblRecommendItem.Text = "Item: " + nameItem;
-                                        lblRecommendPrice.Text = "Price: " + priceItem;
+                                        lblRecommendPrice.Text = "Price: " + "$" + priceItem;
                                         string PicPath = "Data\\" + Link;  //then displays the picture and info of that recommend item
                                         PicRecommend.Image = Image.FromFile(PicPath);
                                     }
@@ -310,6 +323,36 @@ namespace ItemIQ
                 }
 
             }
+        }
+
+        private void PicItem2_Click(object sender, EventArgs e)
+        {
+            OpenItemInfomation("Pumpkin");
+        }
+
+        private void PicItem1_Click(object sender, EventArgs e)
+        {
+            OpenItemInfomation("Cucumber");
+        }
+
+        private void PicItem3_Click(object sender, EventArgs e)
+        {
+            OpenItemInfomation("Apple");
+        }
+
+        private void PicItem4_Click(object sender, EventArgs e)
+        {
+            OpenItemInfomation("Taco Shells");
+        }
+
+        private void PicItem5_Click(object sender, EventArgs e)
+        {
+            OpenItemInfomation("WinterVegs");
+        }
+
+        private void PicItem6_Click(object sender, EventArgs e)
+        {
+            OpenItemInfomation("Rice Bubbles");
         }
     }
 }

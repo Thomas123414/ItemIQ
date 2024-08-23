@@ -53,8 +53,8 @@
             // 
             // btnLogOut
             // 
-            btnLogOut.BackColor = Color.DarkSlateBlue;
-            btnLogOut.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold);
+            btnLogOut.BackColor = Color.Cyan;
+            btnLogOut.Font = new Font("Impact", 9.75F);
             btnLogOut.Image = (Image)resources.GetObject("btnLogOut.Image");
             btnLogOut.Location = new Point(811, 2);
             btnLogOut.Name = "btnLogOut";
@@ -65,8 +65,8 @@
             // 
             // btnProfile
             // 
-            btnProfile.BackColor = Color.DarkSlateBlue;
-            btnProfile.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold);
+            btnProfile.BackColor = Color.Cyan;
+            btnProfile.Font = new Font("Impact", 9.75F);
             btnProfile.Image = (Image)resources.GetObject("btnProfile.Image");
             btnProfile.Location = new Point(603, 2);
             btnProfile.Name = "btnProfile";
@@ -76,8 +76,8 @@
             // 
             // btnChecklist
             // 
-            btnChecklist.BackColor = Color.DarkSlateBlue;
-            btnChecklist.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold);
+            btnChecklist.BackColor = Color.Cyan;
+            btnChecklist.Font = new Font("Impact", 9.75F);
             btnChecklist.Image = (Image)resources.GetObject("btnChecklist.Image");
             btnChecklist.ImageAlign = ContentAlignment.MiddleRight;
             btnChecklist.Location = new Point(394, 2);
@@ -90,8 +90,8 @@
             // 
             // btnCheckout
             // 
-            btnCheckout.BackColor = Color.DarkSlateBlue;
-            btnCheckout.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold);
+            btnCheckout.BackColor = Color.Cyan;
+            btnCheckout.Font = new Font("Impact", 9.75F);
             btnCheckout.Image = (Image)resources.GetObject("btnCheckout.Image");
             btnCheckout.ImageAlign = ContentAlignment.MiddleRight;
             btnCheckout.Location = new Point(196, 2);
@@ -104,8 +104,8 @@
             // 
             // btnHome
             // 
-            btnHome.BackColor = Color.DarkSlateBlue;
-            btnHome.Font = new Font("Bernard MT Condensed", 9.75F, FontStyle.Bold);
+            btnHome.BackColor = Color.Cyan;
+            btnHome.Font = new Font("Impact", 9.75F);
             btnHome.Image = (Image)resources.GetObject("btnHome.Image");
             btnHome.ImageAlign = ContentAlignment.MiddleRight;
             btnHome.Location = new Point(1, 2);
@@ -136,31 +136,31 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Bernard MT Condensed", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Impact", 15.75F);
             label1.Location = new Point(469, 71);
             label1.Name = "label1";
-            label1.Size = new Size(103, 25);
+            label1.Size = new Size(104, 26);
             label1.TabIndex = 16;
             label1.Text = "Username:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Bernard MT Condensed", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Impact", 15.75F);
             label2.ImageAlign = ContentAlignment.MiddleLeft;
             label2.Location = new Point(504, 127);
             label2.Name = "label2";
-            label2.Size = new Size(68, 25);
+            label2.Size = new Size(61, 26);
             label2.TabIndex = 17;
             label2.Text = "Email:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Bernard MT Condensed", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Impact", 15.75F);
             label3.Location = new Point(469, 187);
             label3.Name = "label3";
-            label3.Size = new Size(103, 25);
+            label3.Size = new Size(101, 26);
             label3.TabIndex = 18;
             label3.Text = "Password:";
             // 
@@ -180,8 +180,8 @@
             // 
             // btnSaveDetails
             // 
-            btnSaveDetails.BackColor = Color.DarkSlateBlue;
-            btnSaveDetails.Font = new Font("Bernard MT Condensed", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSaveDetails.BackColor = Color.Cyan;
+            btnSaveDetails.Font = new Font("Impact", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnSaveDetails.Location = new Point(578, 260);
             btnSaveDetails.Name = "btnSaveDetails";
             btnSaveDetails.Size = new Size(319, 41);
@@ -193,16 +193,17 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Bernard MT Condensed", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Font = new Font("Impact", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.Location = new Point(28, 314);
             label4.Name = "label4";
-            label4.Size = new Size(227, 31);
+            label4.Size = new Size(221, 34);
             label4.TabIndex = 22;
             label4.Text = "Last Order Invoice:";
             // 
             // lsvCartList
             // 
             lsvCartList.Columns.AddRange(new ColumnHeader[] { ItemName, Price, NumberOfItems, TotalItemPrice });
+            lsvCartList.Font = new Font("Impact", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lsvCartList.Location = new Point(12, 348);
             lsvCartList.Name = "lsvCartList";
             lsvCartList.Size = new Size(975, 322);
@@ -234,7 +235,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.DarkSlateBlue;
+            BackColor = Color.Cyan;
             ClientSize = new Size(1013, 682);
             Controls.Add(lsvCartList);
             Controls.Add(label4);

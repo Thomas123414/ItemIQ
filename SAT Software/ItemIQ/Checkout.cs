@@ -13,6 +13,7 @@ using System.Xml;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 using System.Text.RegularExpressions;
+using System.Xml.Linq;
 
 namespace ItemIQ
 {
@@ -105,12 +106,12 @@ namespace ItemIQ
                                     Numberofitem = reader.ReadString();
                                     float TotalPrice = float.Parse(Price) * float.Parse(Numberofitem);
                                     ListViewItem listItem = new ListViewItem();   //"Row" object.
-                                    listItem.Text = ItemName;   
+                                    listItem.Text = ItemName;
                                     listItem.SubItems.Add(Price);       //createss a listview objects and adds data to it from the xml file and displayys the data in a listview box
                                     listItem.SubItems.Add(Numberofitem);
                                     listItem.SubItems.Add($"{TotalPrice}");
                                     Totalforwholecart = Totalforwholecart + TotalPrice;
-                                    lblTotalPrice.Text = "Total Price for cart: " + $"{Totalforwholecart}";
+                                    lblTotalPrice.Text = "Total Price for cart: " + "$" + $"{Totalforwholecart}";
                                     if (ItemName != "" && Price != "" && Numberofitem != "")   //if field all have values
                                     {
                                         lsvCartList.Items.Add(listItem);      //display entire listview row
@@ -124,8 +125,8 @@ namespace ItemIQ
 
                 }
             }
-            catch 
-            { 
+            catch
+            {
 
             }
         }
@@ -145,8 +146,100 @@ namespace ItemIQ
             }
             else
             {
-                Payedfor = true; // sets payfor to true (very important)
+                string UserName = Form1.Username;
+                string PassWord = Form1.Password;
+                string CartOrderID = UserName + "_CartOrder";
+                string filePath = $"Data\\CartOrders\\{CartOrderID}.xml";
+
+                var sourcePath = filePath; //file paths
+                var destinationPath = $"Data\\Pastorders\\Last_{CartOrderID}.xml";
+                if (File.Exists(destinationPath))
+                {
+                    File.Delete(destinationPath);       //deleting existing file if they exist
+                }
+                File.Move(sourcePath, destinationPath);     //moving the file to a different location
+                File.Delete(sourcePath);
+
+                lsvCartList.Items.Clear();
+                lsvCartList.Refresh();
+                txtCardName.Clear();
+                txtCardNumber.Clear();
+                txtCardDate.Clear();
+                txtCardCvc.Clear();
             }
+        }
+
+        private void btnDeleteSelected_Click(object sender, EventArgs e)
+        {
+            string UserName = Form1.Username;
+            string filePath = $"Data\\CartOrders\\{UserName}_CartOrder.xml";
+
+            string del = lsvCartList.SelectedItems[0].Text;
+            var xml = File.ReadAllText(filePath);
+            XDocument doc = XDocument.Parse(xml);
+
+            //Remove xml element that matches the selected firstName field
+            doc.Descendants().Elements("Product").Where(x => x.Element("ItemName")?.Value == del).Remove();
+
+            var result = doc.ToString();
+            doc.Save(filePath);
+
+            lsvCartList.Items.Clear();
+            lsvCartList.Refresh();
+
+            float Totalforwholecart = 0;
+            string ItemName = "", Price = "", Numberofitem = "";
+            try
+            {
+                using (XmlReader reader = XmlReader.Create(filePath)) // Xml reader which reads a xml file full of login data to see if you aloowed into the app 
+                {
+
+                    while (reader.Read()) // while reading the file it excutes the code within it
+                    {
+                        if (reader.IsStartElement()) // finds the starter element within the xml file
+                        {
+
+                            //return only when you have START tag  
+                            switch (reader.Name.ToString())
+                            {
+                                case "ItemName":       //Store the data element for itemname
+                                    ItemName = reader.ReadString();
+                                    break;
+                                case "ItemPrice":   //Store the data element for itemprice
+                                    Price = reader.ReadString();
+                                    break;
+                                case "NumberItem":  //Store the data element for itemname
+                                    Numberofitem = reader.ReadString();
+                                    float TotalPrice = float.Parse(Price) * float.Parse(Numberofitem);
+                                    ListViewItem listItem = new ListViewItem();   //"Row" object.
+                                    listItem.Text = ItemName;
+                                    listItem.SubItems.Add(Price);       //createss a listview objects and adds data to it from the xml file and displayys the data in a listview box
+                                    listItem.SubItems.Add(Numberofitem);
+                                    listItem.SubItems.Add($"{TotalPrice}");
+                                    Totalforwholecart = Totalforwholecart + TotalPrice;
+                                    lblTotalPrice.Text = "Total Price for cart: " + "$" + $"{Totalforwholecart}";
+                                    if (ItemName != "" && Price != "" && Numberofitem != "")   //if field all have values
+                                    {
+                                        lsvCartList.Items.Add(listItem);      //display entire listview row
+                                    }
+                                    break;
+                            }
+
+                        }
+
+                    }
+
+                }
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
