@@ -27,13 +27,13 @@ namespace ItemIQ
         {
             string username = txtUsername.Text; //variables for data
             string password = txtPassword.Text;
+            bool LoginDetails = false;
             if (username == "" || password == "")
             {
                 MessageBox.Show("Please fill in your data so that we can process your login request!");
             }
             else
             {
-                bool LoginDetails = false;
                 string filePath = "Data\\LoginDetails.xml"; // pathway in the system to the xml file so i can find it when i need to use it 
 
                 string currentUsernames = "", currentEmails = "", currentPasswords = ""; //variables for data
@@ -56,7 +56,7 @@ namespace ItemIQ
                                     break;
                                 case "Password":
                                     currentPasswords = reader.ReadString();
-                                    if (username == currentUsernames || password == currentPasswords)
+                                    if (username == currentUsernames && password == currentPasswords)
                                     {
                                         LoginDetails = true;
                                         Email = currentEmails;
